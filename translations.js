@@ -6,7 +6,7 @@ window.translations = {
         "header.about": "من نحن",
         "header.consultation": "نظام الاستشارة",
         "header.contact": "اتصل بنا",
-        "header.companyName": "إسنادة",
+        "header.companyName": "إسناد",
         "hero.title": "إسناد للاستشارات القانونية والإدارية",
         "hero.subtitle":
             "شريكك الموثوق للتميز القانوني في دولة الإمارات العربية المتحدة",
