@@ -1078,10 +1078,10 @@
         });
 
         // Initialize EmailJS
-        // Replace with your actual EmailJS credentials
-        const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY_HERE";
-        const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID_HERE";
-        const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID_HERE";
+        // Replace with your actual EmailJS credentials from https://dashboard.emailjs.com/
+        const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY_HERE"; // Get from Account > General
+        const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID_HERE"; // Get from Email Services
+        const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID_HERE"; // Get from Email Templates
 
         // Initialize EmailJS with your public key
         if (typeof emailjs !== "undefined") {
@@ -1386,7 +1386,7 @@
 
     <!-- Google Maps JavaScript API -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApDfcuf4pIJOE3a7DOUa-4Kg7sFu0a3i8&libraries=places"
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR-GOOGLE-API-KEY&libraries=places"
       async
       defer
     ></script>

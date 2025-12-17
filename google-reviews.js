@@ -4,8 +4,8 @@
 // 2. Your Google Place ID
 
 const GOOGLE_CONFIG = {
-    apiKey: 'AIzaSyApDfcuf4pIJOE3a7DOUa-4Kg7sFu0a3i8', // Replace with your actual API key
-    placeId: 'ChIJW1UaCmVmXj4RGVYFgJrrH08' // Replace with your actual Place ID
+    apiKey: 'YOUR-API-KEY-HERE', // Replace with your actual API key
+    placeId: 'YOUR-PLACE-ID-HERE' // Replace with your actual Place ID
 };
 
 // Function to fetch Google reviews
