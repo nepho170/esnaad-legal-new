@@ -1,295 +1,324 @@
-// Translations for Esnaad Legal Website
-window.translations = {
+const translations = {
     ar: {
-        "header.home": "الرئيسية",
-        "header.services": "خدماتنا",
-        "header.about": "من نحن",
-        "header.consultation": "نظام الاستشارة",
-        "header.contact": "اتصل بنا",
-        "header.companyName": "إسناد",
-        "hero.title": "إسناد للاستشارات القانونية والإدارية",
-        "hero.subtitle":
-            "شريكك الموثوق للتميز القانوني في دولة الإمارات العربية المتحدة",
-        "hero.cta1": "خدماتنا",
-        "hero.cta2": "احجز استشارة",
-        "about.title": "من نحن",
-        "about.content1":
-            "نحن واحدة من أفضل شركات الاستشارات القانونية والإدارية في الإمارات العربية المتحدة، مع مجموعة من المحامين والمستشارين القانونيين والإداريين ذوي الخبرة والكفاءة والشمولية والتنوع في جميع المجالات القانونية.",
-        "about.content2":
-            "هدفنا هو تقديم خدمة العملاء بأفضل طريقة وتحقيق أعلى قيمة رضا لهم. نحن مؤهلون لهذا أمام جميع المحاكم في الإمارات العربية المتحدة من خلال محامين مؤهلين ومعتمدين من نقابة المحامين بالدولة.",
-        "services.title": "خدماتنا المتميزة",
-        "services.subtitle":
-            "نقدم مجموعة شاملة من الخدمات القانونية والإدارية لتلبية جميع احتياجاتك",
-        "consultation.title": "نظام الاستشارات القانونية",
-        "testimonials.title": "آراء العملاء",
-        "about.experience": "+15 سنة خبرة",
-        "about.experienceDesc": "في مجال الاستشارات القانونية",
-        "about.confidentiality": "السرية التامة",
-        "about.confidentialityDesc": "نضمن خصوصية بياناتك",
-        "about.quality": "الجودة العالية",
-        "about.qualityDesc": "معايير احترافية عالمية",
-        "services.legal.title": "الاستشارات القانونية",
-        "services.legal.desc":
-            "تغطية كاملة للمجالات القانونية: تجاري، عقاري، عمالي، أحوال شخصية، وجنائي مع فريق من المحامين المتخصصين.",
-        "services.company.title": "تأسيس الشركات",
-        "services.company.desc":
-            "خدمات شاملة لتأسيس وترخيص الشركات في الإمارت العربية المتحدة وفق أحدث الأنظمة واللوائح مع متابعة مستمرة.",
-        "services.contract.title": "صياغة العقود",
-        "services.contract.desc":
-            "صياغة ومراجعة جميع أنواع العقود التجارية والمدنية لضمان حماية حقوقك ومصالحك القانونية.",
-        "services.details.title": "تفاصيل خدماتنا",
-        "services.details.subtitle":
-            "اضغط على أي خدمة لمعرفة المزيد من التفاصيل",
-        "services.legal.specialized": "الاستشارات القانونية المتخصصة",
-        "services.legal.intro":
-            "نقدم استشارات قانونية متكاملة تغطي جميع المجالات القانونية:",
-        "services.legal.commercial.title": "القانون التجاري",
-        "services.legal.commercial.desc":
-            "استشارات في تأسيس الشركات، الاندماج، التصفية، المنافسة، والملكية الفكرية.",
-        "services.legal.realestate.title": "القانون العقاري",
-        "services.legal.realestate.desc":
-            "استشارات في البيع، الشراء، الإيجار، الرهن، والمنازعات العقارية.",
-        "services.legal.labor.title": "القانون العمالي",
-        "services.legal.labor.desc":
-            "استشارات في عقود العمل، المنازعات العمالية، وإنهاء خدمات العاملين.",
-        "services.legal.personal.title": "الأحوال الشخصية",
-        "services.legal.personal.desc":
-            "استشارات في الزواج، الطلاق، الميراث، الوصية، والنفقة.",
-        "services.company.services": "خدمات تأسيس وترخيص الشركات",
-        "services.company.intro":
-            "خدمات متكاملة لتأسيس الشركات في الإمارت العربية المتحدة:",
-        "services.company.activity.title": "اختيار النشاط",
-        "services.company.activity.desc":
-            "مساعدتك في اختيار النشاط التجاري المناسب والترخيص اللازم له.",
-        "services.company.registration.title": "التسجيل والترخيص",
-        "services.company.registration.desc":
-            "إتمام جميع إجراءات التسجيل في الوزارات والجهات المعنية.",
-        "services.company.residence.title": "خدمات الإقامة",
-        "services.company.residence.desc":
-            "حصول المالكين والمدراء على الإقامات وتصاريح العمل اللازمة.",
-        "services.company.followup.title": "المتابعة المستمرة",
-        "services.company.followup.desc":
-            "متابعة تجديد التراخيص والالتزامات النظامية بشكل دوري.",
-        "services.contract.services": "صياغة ومراجعة العقود",
-        "services.contract.intro":
-            "نضمن لك عقوداً محكمة تحمي مصالحك القانونية:",
-        "services.contract.partnership.title": "عقود الشراكة",
-        "services.contract.partnership.desc":
-            "صياغة عقود الشراكة التجارية والاستثمارية بكافة أنواعها.",
-        "services.contract.sales.title": "عقود البيع",
-        "services.contract.sales.desc":
-            "عقود بيع وشراء السلع والخدمات والعقارات والتجهيزات.",
-        "services.contract.construction.title": "عقود المقاولات",
-        "services.contract.construction.desc":
-            "عقود أعمال المقاولات والإنشاءات بكافة أحجامها.",
-        "services.contract.employment.title": "عقود العمل",
-        "services.contract.employment.desc":
-            "صياغة عقود العمل والإدارة والاستشارات بكافة أنواعها.",
-        "consultation.subtitle":
-            "نقدم استشارات قانونية مخصصة تبدأ من أول اتصال وحتى حل القضية",
-        "consultation.step1.title": "التواصل الأولي",
-        "consultation.step1.desc":
-            "اتصل بنا أو املأ النموذج للحصول على استشارة أولية مجانية لتقييم حالتك",
-        "consultation.step2.title": "التحليل القانوني",
-        "consultation.step2.desc":
-            "يقوم فريقنا المختص بتحليل حالتك ومراجعة جميع المستندات القانونية",
-        "consultation.step3.title": "تقديم الحلول",
-        "consultation.step3.desc":
-            "نقدم لك الخيارات القانونية المتاحة مع شرح مفصل لكل خيار",
-        "consultation.step4.title": "التنفيذ والمتابعة",
-        "consultation.step4.desc":
-            "نقوم بتنفيذ الخطة المتفق عليها مع متابعة مستمرة لإبلاغك بآخر التطورات",
-        "consultation.form.title": "طلب استشارة قانونية",
-        "consultation.form.subtitle":
-            "املأ النموذج وسنتصل بك خلال 24 ساعة عمل",
-        "form.name": "الاسم الكامل",
-        "form.email": "البريد الإلكتروني",
-        "form.phone": "رقم الهاتف",
-        "form.consultationType": "نوع الاستشارة",
-        "form.selectOption": "اختر نوع الاستشارة",
-        "form.option.company": "تأسيس شركة",
-        "form.option.contract": "صياغة عقد",
-        "form.option.dispute": "نزاع قانوني",
-        "form.option.general": "استشارة عامة",
-        "form.option.other": "أخرى",
-        "form.details": "تفاصيل الاستشارة",
-        "form.preferredTime": "الوقت المناسب للاتصال",
-        "form.selectTime": "اختر الوقت المناسب",
-        "form.time.morning": "الصباح (8ص - 12م)",
-        "form.time.afternoon": "الظهر (12م - 4م)",
-        "form.time.evening": "المساء (4م - 8م)",
-        "form.attachments": "رفع المستندات (اختياري)",
-        "form.agreeTerms":
-            "أوافق على الشروط والأحكام وأوافق على معالجة بياناتي الشخصية",
-        "form.submit": "إرسال طلب الاستشارة",
-        "testimonials.subtitle": "تجارب حقيقية لعملاء استفادوا من خدماتنا",
-        "contact.title": "تواصل معنا",
-        "contact.subtitle": "نحن هنا لمساعدتك في أي استفسار قانوني",
-        "contact.info.title": "معلومات الاتصال",
-        "contact.address.title": "العنوان",
-        "contact.address.text":
-            "الإمارات العربية المتحدة – أبوظبي، شارع حمدان، المبنى رقم 6\nص.ب: 5115 – أبوظبي",
-        "contact.phone.title": "الهاتف",
-        "contact.phone.text": "+971 2 6222210\n+971 2 6222855",
-        "contact.email.title": "البريد الإلكتروني",
-        "contact.email.text": "esnaaduae@gmail.com",
-        "contact.form.title": "أرسل رسالة",
-        "contact.form.name": "الاسم الكامل",
-        "contact.form.email": "البريد الإلكتروني",
-        "contact.form.subject": "الموضوع",
-        "contact.form.message": "الرسالة",
-        "contact.form.submit": "إرسال الرسالة",
-        "footer.company": "إسناد",
-        "footer.tagline": "شركاؤك في النجاح القانوني والإداري",
-        "footer.copyright":
-            "© 2025 إسناد للاستشارات القانونية. جميع الحقوق محفوظة.",
-        "footer.designer": "تصميم وتطوير: يوسف التجاني",
+        // Meta & Title
+        page_title: "مجموعة إسناد | استشارات قانونية وإدارية وتحصيل ديون",
+
+        // Navbar
+        brand_name: "مجموعة إسناد",
+        nav_home: "الرئيسية",
+        nav_about: "من نحن",
+        nav_services: "خدماتنا",
+        nav_service_legal: "استشارات قانونية",
+        nav_service_debt: "تحصيل الديون",
+        nav_service_hr: "الموارد البشرية",
+        nav_service_companies: "تأسيس الشركات و ISO",
+        nav_system: "نظام الاستشارات",
+        nav_contact: "تواصل معنا",
+        lang_btn: "English",
+
+        // Hero Section
+        hero_badge: "تأسست عام 2013",
+        hero_title: "مجموعة إسناد للاستشارات",
+        hero_subtitle: "قانونية | إدارية | موارد بشرية | تحصيل ديون",
+        hero_desc:
+            "نطمح لتطبيق القانون وخدمة المجتمع بشفافية ومصداقية لارتجاع الحقوق لأصحابها.",
+        hero_btn_book: "احجز استشارتك الآن",
+        hero_btn_services: "استعرض خدماتنا",
+
+        // About Section
+        about_title: "من نحن",
+        about_text_1:
+            'تأسس مكتب إسناد للاستشارات القانونية والإدارية عام 2013 على يد الدكتور إياد إبراهيم الغول، بهدف تقديم خدمات قانونية متميزة تلتزم بأعلى معايير الجودة والاحترافية.',
+        about_text_2:
+            "منذ تأسيسها، نمت الشركة لتصبح واحدة من المكاتب القانونية المتميزة في دولة الإمارات العربية المتحدة، موسعة خبرتها ونجاحها في تقديم كافة الخدمات المطلوبة وفقاً لقانون دولة الإمارات.",
+        qualifications_title: "المؤهلات العلمية للمؤسسين",
+        qual_1: "دكتوراه في إدارة الأعمال",
+        qual_2: "دكتوراه في القانون العام",
+        qual_3: "دكتوراه في الموارد البشرية",
+        qual_4: "دكتوراه في الجودة",
+        qual_5: "ماجستير في إدارة الأعمال (MBA)",
+        qual_6: "بكالريوس في اللغة الإنجليزية",
+
+
+        // Vision/Mission Cards
+        vision_title: "رؤيتنا",
+        vision_text:
+            "أن نكون أفضل مكتب في الإمارات، نقدم خدماتنا بمصداقية وشفافية لتحقيق الهدف الأسمى في إرجاع الحقوق لأصحابها.",
+        mission_title: "رسالتنا",
+        mission_text:
+            "تقديم الخدمات القانونية على أتم وجه استناداً لقيمنا: الاجتهاد، الالتزام، الاستجابة، وتعزيز الثقة والنزاهة.",
+        responsibility_title: "المسؤولية تجاه العملاء",
+        responsibility_text:
+            "نتعهد بالحفاظ على السرية التامة لبيانات عملائنا، ونسعى لتقديم الحلول التي تكفل حقوقهم بكافة الطرق القانونية أمام المحاكم القضائية.",
+
+        // Sectors
+        sectors_title: "قطاعات العمل التي نخدمها",
+        sector_gov_title: "المؤسسات الحكومية",
+        sector_gov_desc: "الوزارات، الدوائر المحلية، وبلدية أبوظبي.",
+        sector_public_title: "المؤسسات العامة",
+        sector_public_desc: "الغرف التجارية، الاتحادات الصناعية والمهنية.",
+        sector_private_title: "القطاع الخاص",
+        sector_private_desc:
+            "كافة القطاعات الصناعية والخدمية والشركات متعددة الجنسيات.",
+
+        // Services Section
+        services_main_title: "خدماتنا المتكاملة",
+        services_sub_title: "حلول شاملة: قانونية، إدارية، مالية، وموارد بشرية",
+        srv_legal_title: "الاستشارات القانونية",
+        srv_legal_desc:
+            "تشمل القضايا التجارية، المدنية، الجنائية، الأحوال الشخصية، المنازعات العمالية، القضايا الإيجارية، وقضايا التحكيم.",
+        srv_debt_title: "تحصيل الديون",
+        srv_debt_desc:
+            "من أهم المكاتب في الدولة لتحصيل الديون. نستخدم حلولاً متنوعة (ودية وقضائية) لاسترجاع الحقوق مع الحفاظ على السرية التامة.",
+        srv_hr_title: "الإدارة والموارد البشرية",
+        srv_hr_desc:
+            "عمل هياكل إدارية، الوصف الوظيفي، وتدريب الكوادر البشرية لتحسين مستوى الوعي والأداء.",
+        srv_feasibility_title: "دراسات الجدوى والجودة",
+        srv_feasibility_desc:
+            "إعداد دراسات الجدوى الاقتصادية والمساعدة في الحصول على شهادة الجودة (ISO).",
+        srv_contract_title: "صياغة العقود",
+        srv_contract_desc:
+            "صياغة ومراجعة كافة العقود المدنية والتجارية وعقود الشركات لحماية حقوق الموكلين.",
+        srv_tm_title: "تسجيل العلامات التجارية",
+        srv_tm_desc:
+            "خدمات تسجيل وحماية العلامات التجارية والملكية الفكرية للمؤسسات والأفراد.",
+
+        // Testimonials Section
+        testimonials_title: "آراء العملاء",
+        testimonials_subtitle: "ما يقوله عملاؤنا عن خدماتنا",
+
+        // Collapse Details
+        collapse_main_title: "تفاصيل الخدمات",
+        collapse_biz_title: "خدمات الأعمال الإدارية والهيكلة",
+        collapse_biz_1: "عمل هياكل إدارية وتنظيمية.",
+        collapse_biz_2: "إعداد دراسات الجدوى الاقتصادية للمشاريع.",
+        collapse_biz_3: "تسجيل العلامات التجارية.",
+        collapse_biz_4: "الحصول على شهادات الجودة (ISO).",
+        collapse_biz_5: "تحسين مستوى الحوكمة وضبط الجودة.",
+        collapse_legal_title: "الاختصاصات القانونية والقضائية",
+        collapse_legal_intro:
+            "ننوب عن الوكيل أمام كافة الهيئات القضائية ولجان فض المنازعات:",
+        collapse_legal_1: "القضايا التجارية والمدنية.",
+        collapse_legal_2: "قضايا الأحوال الشخصية (الزواج، الطلاق، الميراث).",
+        collapse_legal_3: "القضايا الجنائية والجزائية.",
+        collapse_legal_4: "المنازعات العمالية (أصحاب عمل وعمال).",
+        collapse_legal_5: "المنازعات الإيجارية.",
+        collapse_legal_6: "قضايا التحكيم التجاري.",
+
+        // Consultation System
+        consult_system_title: 'نظام "رؤية" في الاستشارات عن بعد',
+        consult_system_desc: "نظام متكامل لتقديم الاستشارات بمرونة عالية",
+        step_1_title: "تحديد نوع الاستشارة",
+        step_1_desc:
+            "يحدد العميل نوع الاستشارة المطلوبة (قانونية، إدارية، إلخ).",
+        step_2_title: "سداد الرسوم",
+        step_2_desc: "يقوم العميل بسداد الرسوم عن طريق حساب الشركة البنكي.",
+        step_3_title: "تحديد الوقت والطريقة",
+        step_3_desc:
+            "يختار العميل الوقت المناسب وطريقة التواصل (هاتف/مقابلة).",
+        step_4_title: "جلسات الاستشارة",
+        step_4_desc: "مدة الاستشارة: 4 لقاءات/جلسات، مدة كل جلسة ساعة واحدة.",
+        consult_note:
+            "نراعي ونحافظ على أسرار عملائنا ونحترم كافة الفروق الفردية.",
+
+        // Form
+        form_header: "طلب استشارة أو خدمة",
+        form_subheader: "املأ النموذج وسيقوم فريقنا بالتواصل معك في أقرب وقت",
+        lbl_name: "الاسم الكامل",
+        ph_name: "أدخل اسمك الكامل",
+        lbl_email: "البريد الإلكتروني",
+        ph_email: "example@email.com",
+        lbl_phone: "رقم الهاتف",
+        ph_phone: "050xxxxxxx",
+        lbl_service: "نوع الخدمة",
+        opt_default: "اختر نوع الخدمة",
+        opt_legal: "استشارات قانونية (مدني، تجاري، جنائي)",
+        opt_remote: "استشارات عن بعد (نظام رؤية)",
+        opt_debt: "تحصيل الديون",
+        opt_company: "تأسيس شركات / علامات تجارية",
+        opt_feasibility: "دراسات جدوى / ISO",
+        opt_hr: "موارد بشرية وهياكل إدارية",
+        opt_contracts: "صياغة عقود",
+        lbl_details: "التفاصيل",
+        ph_details: "اكتب تفاصيل طلبك هنا...",
+        btn_submit: "إرسال الطلب",
+
+        // Contact
+        contact_title: "تواصل معنا",
+        contact_info_title: "بيانات الاتصال",
+        contact_addr_title: "العنوان",
+        contact_addr_text:
+            "الإمارات العربية المتحدة - أبوظبي<br />شارع حمدان، بناية رقم 6 (بناية صيدلية نور الأهلية)<br />بجوار مركز الأهلية الطبي<br />الطابق الثاني، مكتب 203<br />صندوق بريد: 5115 - أبوظبي",
+        contact_phone_title: "الهاتف والفاكس",
+        contact_email_title: "البريد الإلكتروني",
+
+        // Footer
+        footer_desc: "تأسست عام 2013 - ريادة في القانون والإدارة",
+        footer_copy: "© 2025 مجموعة إسناد. جميع الحقوق محفوظة.",
     },
     en: {
-        "header.home": "Home",
-        "header.services": "Services",
-        "header.about": "About Us",
-        "header.consultation": "Consultation System",
-        "header.contact": "Contact",
-        "header.companyName": "Esnaad",
-        "hero.title": "Esnaad Legal & Administrative Consultancy",
-        "hero.subtitle":
-            "Your trusted partner for legal excellence in the UAE",
-        "hero.cta1": "Our Services",
-        "hero.cta2": "Book Consultation",
-        "about.title": "About Us",
-        "about.content1":
-            "We are one of the best legal and management consulting firms in UAE, with a selection of lawyers and legal and management consultants who are experienced, efficient, comprehensive and diverse in all legal domains.",
-        "about.content2":
-            "Our goal is to provide the customer service in the best way and achieve the highest value satisfaction for them. We are eligible for this before all courts in the UAE through qualified lawyers and accredited by the State Bar Association.",
-        "services.title": "Our Distinguished Services",
-        "services.subtitle":
-            "We provide a comprehensive range of legal and administrative services to meet all your needs",
-        "consultation.title": "Legal Consultation System",
-        "testimonials.title": "Client Testimonials",
-        "about.experience": "+15 Years Experience",
-        "about.experienceDesc": "in Legal Consultancy",
-        "about.confidentiality": "Complete Confidentiality",
-        "about.confidentialityDesc": "We ensure your data privacy",
-        "about.quality": "High Quality",
-        "about.qualityDesc": "International Professional Standards",
-        "services.legal.title": "Legal Consultations",
-        "services.legal.desc":
-            "Complete coverage of legal fields: commercial, real estate, labor, personal status, and criminal with a team of specialized lawyers.",
-        "services.company.title": "Company Establishment",
-        "services.company.desc":
-            "Comprehensive services for establishing and licensing companies in the UAE according to the latest systems and regulations with continuous follow-up.",
-        "services.contract.title": "Contract Drafting",
-        "services.contract.desc":
-            "Drafting and reviewing all types of commercial and civil contracts to ensure protection of your rights and legal interests.",
-        "services.details.title": "Our Services Details",
-        "services.details.subtitle":
-            "Click on any service to learn more details",
-        "services.legal.specialized": "Specialized Legal Consultations",
-        "services.legal.intro":
-            "We provide comprehensive legal consultations covering all legal fields:",
-        "services.legal.commercial.title": "Commercial Law",
-        "services.legal.commercial.desc":
-            "Consultations on company establishment, mergers, liquidation, competition, and intellectual property.",
-        "services.legal.realestate.title": "Real Estate Law",
-        "services.legal.realestate.desc":
-            "Consultations on sale, purchase, rental, mortgage, and real estate disputes.",
-        "services.legal.labor.title": "Labor Law",
-        "services.legal.labor.desc":
-            "Consultations on employment contracts, labor disputes, and employee termination.",
-        "services.legal.personal.title": "Personal Status",
-        "services.legal.personal.desc":
-            "Consultations on marriage, divorce, inheritance, wills, and alimony.",
-        "services.company.services":
-            "Company Establishment and Licensing Services",
-        "services.company.intro":
-            "Integrated services for establishing companies in the UAE:",
-        "services.company.activity.title": "Activity Selection",
-        "services.company.activity.desc":
-            "Helping you choose the appropriate business activity and required license.",
-        "services.company.registration.title": "Registration and Licensing",
-        "services.company.registration.desc":
-            "Completing all registration procedures in ministries and concerned authorities.",
-        "services.company.residence.title": "Residence Services",
-        "services.company.residence.desc":
-            "Obtaining residence visas and work permits for owners and managers.",
-        "services.company.followup.title": "Continuous Follow-up",
-        "services.company.followup.desc":
-            "Regular follow-up on license renewals and regulatory obligations.",
-        "services.contract.services": "Contract Drafting and Review",
-        "services.contract.intro":
-            "We guarantee you tight contracts that protect your legal interests:",
-        "services.contract.partnership.title": "Partnership Contracts",
-        "services.contract.partnership.desc":
-            "Drafting commercial and investment partnership contracts of all types.",
-        "services.contract.sales.title": "Sales Contracts",
-        "services.contract.sales.desc":
-            "Contracts for sale and purchase of goods, services, real estate, and equipment.",
-        "services.contract.construction.title": "Construction Contracts",
-        "services.contract.construction.desc":
-            "Contracts for construction and building works of all sizes.",
-        "services.contract.employment.title": "Employment Contracts",
-        "services.contract.employment.desc":
-            "Drafting employment, management, and consulting contracts of all types.",
-        "consultation.subtitle":
-            "We provide customized legal consultations starting from first contact until case resolution",
-        "consultation.step1.title": "Initial Contact",
-        "consultation.step1.desc":
-            "Contact us or fill out the form to get a free initial consultation to assess your case",
-        "consultation.step2.title": "Legal Analysis",
-        "consultation.step2.desc":
-            "Our specialized team analyzes your case and reviews all legal documents",
-        "consultation.step3.title": "Providing Solutions",
-        "consultation.step3.desc":
-            "We present you with available legal options with detailed explanation for each option",
-        "consultation.step4.title": "Implementation and Follow-up",
-        "consultation.step4.desc":
-            "We implement the agreed plan with continuous follow-up to inform you of the latest developments",
-        "consultation.form.title": "Legal Consultation Request",
-        "consultation.form.subtitle":
-            "Fill out the form and we will contact you within 24 working hours",
-        "form.name": "Full Name",
-        "form.email": "Email Address",
-        "form.phone": "Phone Number",
-        "form.consultationType": "Consultation Type",
-        "form.selectOption": "Select Consultation Type",
-        "form.option.company": "Company Establishment",
-        "form.option.contract": "Contract Drafting",
-        "form.option.dispute": "Legal Dispute",
-        "form.option.general": "General Consultation",
-        "form.option.other": "Other",
-        "form.details": "Consultation Details",
-        "form.preferredTime": "Preferred Contact Time",
-        "form.selectTime": "Select Preferred Time",
-        "form.time.morning": "Morning (8AM - 12PM)",
-        "form.time.afternoon": "Afternoon (12PM - 4PM)",
-        "form.time.evening": "Evening (4PM - 8PM)",
-        "form.attachments": "Upload Documents (Optional)",
-        "form.agreeTerms":
-            "I agree to the terms and conditions and consent to the processing of my personal data",
-        "form.submit": "Submit Consultation Request",
-        "testimonials.subtitle":
-            "Real experiences from clients who benefited from our services",
-        "contact.title": "Contact Us",
-        "contact.subtitle": "We are here to help you with any legal inquiry",
-        "contact.info.title": "Contact Information",
-        "contact.address.title": "Address",
-        "contact.address.text":
-            "United Arab Emirates – Abu Dhabi, Hamdan Street, Al building na 6\nP.O Box: 5115 – Abu Dhabi",
-        "contact.phone.title": "Phone",
-        "contact.phone.text": "+971 2 6222210\n+971 2 6222855",
-        "contact.email.title": "Email",
-        "contact.email.text": "esnaaduae@gmail.com",
-        "contact.form.title": "Send a Message",
-        "contact.form.name": "Full Name",
-        "contact.form.email": "Email Address",
-        "contact.form.subject": "Subject",
-        "contact.form.message": "Message",
-        "contact.form.submit": "Send Message",
-        "footer.company": "Esnaad",
-        "footer.tagline": "Your partners in legal and administrative success",
-        "footer.copyright":
-            "© 2025 Esnaad Legal Consultancy. All rights reserved.",
-        "footer.designer": "Design and Development: Youssef Al-Tajani",
+        // Meta & Title
+        page_title:
+            "Esnaad Group | Legal, Administrative & Debt Collection Consultancy",
+
+        // Navbar
+        brand_name: "Esnaad Group",
+        nav_home: "Home",
+        nav_about: "About Us",
+        nav_services: "Our Services",
+        nav_service_legal: "Legal Consultancy",
+        nav_service_debt: "Debt Collection",
+        nav_service_hr: "Human Resources",
+        nav_service_companies: "Company Formation & ISO",
+        nav_system: "Consultation System",
+        nav_contact: "Contact Us",
+        lang_btn: "عربي",
+
+        // Hero Section
+        hero_badge: "Established in 2013",
+        hero_title: "Esnaad Consultancy Group",
+        hero_subtitle: "Legal | Administrative | HR | Debt Collection",
+        hero_desc:
+            "We aspire to apply the law and serve the community with transparency and credibility to restore rights to their owners.",
+        hero_btn_book: "Book Consultation",
+        hero_btn_services: "View Services",
+
+        // About Section
+        about_title: "About Us",
+        story_title: "Our Story",
+        about_text_1:
+            "Esnaad Legal & Administrative Consultancy was founded in 2013 by Dr. Iyad Ibrahim Al-Ghoul, with the aim of providing distinguished legal services that adhere to the highest standards of quality and professionalism.",
+        about_text_2:
+            "Since its establishment, the company has grown to become one of the distinguished law firms in the United Arab Emirates, expanding its experience and success in providing all required services in accordance with UAE law",
+        experience: "10+ Years Experience",
+        qualifications_title: "Founders' Qualifications",
+        qual_1: "PhD in Business Administration",
+        qual_2: "PhD in Public Law",
+        qual_3: "PhD in Human Resources",
+        qual_4: "PhD in Quality Management",
+        qual_5: "Master of Business Administration (MBA)",
+        qual_6: "Bachelor's in English Language",
+
+        // Vision/Mission Cards
+        vision_title: "Our Vision",
+        vision_text:
+            "To be the best office in the UAE, providing our services with credibility and transparency to achieve the ultimate goal of restoring rights to their owners.",
+        mission_title: "Our Mission",
+        mission_text:
+            "Providing legal services to the fullest extent based on our values: Diligence, Commitment, Responsiveness, and enhancing Trust and Integrity.",
+        responsibility_title: "Client Responsibility",
+        responsibility_text:
+            "We pledge to maintain complete confidentiality of our clients' data and strive to provide solutions that guarantee their rights through all legal means before judicial courts.",
+
+        // Sectors
+        sectors_title: "Sectors We Serve",
+        sector_gov_title: "Government Institutions",
+        sector_gov_desc:
+            "Ministries, local departments, and Abu Dhabi Municipality.",
+        sector_public_title: "Public Institutions",
+        sector_public_desc:
+            "Chambers of Commerce, industrial and professional unions.",
+        sector_private_title: "Private Sector",
+        sector_private_desc:
+            "All industrial and service sectors and multinational companies.",
+
+        // Services Section
+        services_main_title: "Integrated Services",
+        services_sub_title: "Comprehensive Solutions: Legal, Admin, Financial, & HR",
+        srv_legal_title: "Legal Consultancy",
+        srv_legal_desc:
+            "Includes commercial, civil, criminal, personal status, labor disputes, rental cases, and arbitration cases.",
+        srv_debt_title: "Debt Collection",
+        srv_debt_desc:
+            "One of the most important offices in the country for debt collection. We use various solutions (amicable and judicial) to recover rights while maintaining complete confidentiality.",
+        srv_hr_title: "Management & HR",
+        srv_hr_desc:
+            "Creating administrative structures, job descriptions, and training human cadres to improve awareness and performance levels.",
+        srv_feasibility_title: "Feasibility & Quality",
+        srv_feasibility_desc:
+            "Preparing Economic Feasibility Studies and assisting in obtaining Quality Certification (ISO).",
+        srv_contract_title: "Contract Drafting",
+        srv_contract_desc:
+            "Drafting and reviewing all civil, commercial, and corporate contracts to protect clients' rights.",
+        srv_tm_title: "Trademark Registration",
+        srv_tm_desc:
+            "Registration and protection services for trademarks and intellectual property for institutions and individuals.",
+
+        // Testimonials Section
+        testimonials_title: "Client Reviews",
+        testimonials_subtitle: "What Our Clients Say About Our Services",
+
+        // Collapse Details
+        collapse_main_title: "Service Details",
+        collapse_biz_title: "Administrative & Structuring Services",
+        collapse_biz_1: "Creating administrative and organizational structures.",
+        collapse_biz_2: "Preparing economic feasibility studies for projects.",
+        collapse_biz_3: "Trademark registration.",
+        collapse_biz_4: "Obtaining Quality Certificates (ISO).",
+        collapse_biz_5: "Improving governance and quality control levels.",
+        collapse_legal_title: "Legal & Judicial Competencies",
+        collapse_legal_intro:
+            "We represent the client before all judicial bodies and dispute resolution committees:",
+        collapse_legal_1: "Commercial and Civil cases.",
+        collapse_legal_2:
+            "Personal Status cases (Marriage, Divorce, Inheritance).",
+        collapse_legal_3: "Criminal and Penal cases.",
+        collapse_legal_4: "Labor Disputes (Employers and Workers).",
+        collapse_legal_5: "Rental Disputes.",
+        collapse_legal_6: "Commercial Arbitration cases.",
+
+        // Consultation System
+        consult_system_title: '"Ruya" Remote Consultation System',
+        consult_system_desc:
+            "An integrated system for providing flexible consultations",
+        step_1_title: "Select Consultation Type",
+        step_1_desc:
+            "The client specifies the required consultation type (Legal, Admin, etc.).",
+        step_2_title: "Payment",
+        step_2_desc: "The client pays the fees via the company's bank account.",
+        step_3_title: "Time & Method",
+        step_3_desc:
+            "The client chooses the appropriate time and communication method (Phone/Meeting).",
+        step_4_title: "Consultation Sessions",
+        step_4_desc:
+            "Consultation duration: 4 meetings/sessions, each session lasts one hour.",
+        consult_note:
+            "We respect and maintain our clients' secrets and respect all individual differences.",
+
+        // Form
+        form_header: "Request Consultation or Service",
+        form_subheader:
+            "Fill out the form and our team will contact you shortly",
+        lbl_name: "Full Name",
+        ph_name: "Enter your full name",
+        lbl_email: "Email Address",
+        ph_email: "example@email.com",
+        lbl_phone: "Phone Number",
+        ph_phone: "050xxxxxxx",
+        lbl_service: "Service Type",
+        opt_default: "Select Service Type",
+        opt_legal: "Legal Consultancy (Civil, Commercial, Criminal)",
+        opt_remote: "Remote Consultation (Ruya System)",
+        opt_debt: "Debt Collection",
+        opt_company: "Company Formation / Trademarks",
+        opt_feasibility: "Feasibility Studies / ISO",
+        opt_hr: "HR & Administrative Structures",
+        opt_contracts: "Contract Drafting",
+        lbl_details: "Details",
+        ph_details: "Write your request details here...",
+        btn_submit: "Send Request",
+
+        // Contact
+        contact_title: "Contact Us",
+        contact_info_title: "Contact Information",
+        contact_addr_title: "Address",
+        contact_addr_text:
+            "United Arab Emirates - Abu Dhabi<br />Hamdan St., Building No. 6 (Noor Al Ahalia Pharmacy Bldg)<br />Next to Al-Ahalia Medical Center<br />Second Floor Office 203<br />P.O. Box: 5115 - Abu Dhabi",
+        contact_phone_title: "Phone & Fax",
+        contact_email_title: "Email",
+
+        // Footer
+        footer_desc: "Established 2013 - Leadership in Law & Administration",
+        footer_copy: "© 2025 Esnaad Group. All rights reserved.",
     },
 };

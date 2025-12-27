@@ -15,6 +15,10 @@
   --shadow-light: 0 4px 12px rgba(141, 110, 99, 0.08);
   --shadow-medium: 0 8px 24px rgba(141, 110, 99, 0.12);
   --shadow-heavy: 0 12px 36px rgba(141, 110, 99, 0.15);
+
+  /* Override Bootstrap variables for brown theme */
+  --bs-primary: #a1887f;
+  --bs-primary-rgb: 161, 136, 127;
 }
 
 body {
@@ -51,13 +55,9 @@ h5 {
 
 /* تحسينات النافبار مع ألوان بني فاتح */
 .navbar {
-  background: linear-gradient(
-    135deg,
-    var(--primary-dark),
-    var(--primary)
-  ) !important;
+  background: transparent !important;
   padding: 1.2rem 0;
-  box-shadow: var(--shadow-medium);
+  box-shadow: none;
   transition: all var(--transition-medium) ease;
 }
 
@@ -65,6 +65,7 @@ h5 {
   padding: 0.8rem 0;
   background: rgba(141, 110, 99, 0.95) !important;
   backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-medium);
 }
 
 .navbar-brand {
@@ -279,6 +280,7 @@ h5 {
 .collapse-list-item.active .collapse-list-content {
   max-height: 1000px;
   padding: 0 30px 30px;
+  overflow-y: auto;
 }
 
 .collapse-list-content-inner {

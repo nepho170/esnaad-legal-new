@@ -3,53 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>إسناد للاستشارات القانونية والإدارية | خدمات قانونية متميزة</title>
+    <title data-i18n="page_title">
+      مجموعة إسناد | استشارات قانونية وإدارية وتحصيل ديون
+    </title>
     <meta
       name="description"
-      content="إسناد تقدم استشارات قانونية وإدارية احترافية في الإمارات بسرية تامة وكفاءة عالية."
+      content="تأسست مجموعة إسناد عام 2013، وتقدم خدمات قانونية، تحصيل ديون، واستشارات إدارية وموارد بشرية في أبوظبي، الإمارات."
     />
     <meta
       name="keywords"
-      content="استشارات قانونية, محاماة, تأسيس شركات, عقود قانونية, أبوظبي, الإمارات"
+      content="استشارات قانونية, تحصيل ديون, موارد بشرية, تأسيس شركات, ISO, أبوظبي, إسناد, إياد الغول"
     />
-    <!-- Bootstrap 5 RTL -->
     <link
+      id="rtl-stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
       rel="stylesheet"
     />
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Almarai:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY-HERE&libraries=places" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
-    <!-- WhatsApp Button -->
     <a
-      href="https://wa.me/97126222210?text=مرحباً، أريد استشارة قانونية"
+      href="https://wa.me/971507751534?text=مرحباً، أريد استشارة بخصوص خدمات إسناد"
       class="whatsapp-float"
       target="_blank"
     >
       <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a
-          class="navbar-brand fw-bold"
-          href="#home"
-          data-key="header.companyName"
-          >إسناد</a
-        >
+        <a class="navbar-brand fw-bold" href="#home">
+          <img src="Esnaad-logo.png" alt="Esnaad Logo" height="100" class="me-2">
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -62,12 +58,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto gap-4">
+          <ul class="navbar-nav ms-auto gap-3 align-items-center">
             <li class="nav-item">
               <a
                 class="nav-link fw-medium fs-5"
                 href="#home"
-                data-key="header.home"
+                data-i18n="nav_home"
                 >الرئيسية</a
               >
             </li>
@@ -75,7 +71,7 @@
               <a
                 class="nav-link fw-medium fs-5"
                 href="#about"
-                data-key="about.title"
+                data-i18n="nav_about"
                 >من نحن</a
               >
             </li>
@@ -87,40 +83,36 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                data-key="header.services"
+                data-i18n="nav_services"
               >
                 خدماتنا
               </a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <li>
-                  <a class="dropdown-item" href="#services"
-                    ><i class="fas fa-balance-scale me-2"></i
-                    ><span data-key="services.legalServices"
-                      >استشارات قانونية</span
-                    ></a
-                  >
+                  <a class="dropdown-item" href="#services">
+                    <i class="fas fa-gavel me-2"></i>
+                    <span data-i18n="nav_service_legal">استشارات قانونية</span>
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#services"
-                    ><i class="fas fa-building me-2"></i
-                    ><span data-key="services.administrativeServices"
-                      >تأسيس الشركات</span
-                    ></a
-                  >
+                  <a class="dropdown-item" href="#services">
+                    <i class="fas fa-money-bill-wave me-2"></i>
+                    <span data-i18n="nav_service_debt">تحصيل الديون</span>
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#services"
-                    ><i class="fas fa-file-contract me-2"></i
-                    ><span data-key="services.contractDrafting"
-                      >صياغة العقود</span
-                    ></a
-                  >
+                  <a class="dropdown-item" href="#services">
+                    <i class="fas fa-users-cog me-2"></i>
+                    <span data-i18n="nav_service_hr">الموارد البشرية</span>
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#services"
-                    ><i class="fas fa-gavel me-2"></i
-                    ><span data-key="services.arbitration">تمثيل قضائي</span></a
-                  >
+                  <a class="dropdown-item" href="#services">
+                    <i class="fas fa-building me-2"></i>
+                    <span data-i18n="nav_service_companies"
+                      >تأسيس الشركات و ISO</span
+                    >
+                  </a>
                 </li>
               </ul>
             </li>
@@ -128,141 +120,250 @@
               <a
                 class="nav-link fw-medium fs-5"
                 href="#consultation"
-                data-key="header.consultation"
-                >استشارات</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link fw-medium fs-5"
-                href="#testimonials"
-                data-key="testimonials.title"
-                >آراء عملائنا</a
+                data-i18n="nav_system"
+                >نظام الاستشارات</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-medium fs-5"
                 href="#contact"
-                data-key="header.contact"
+                data-i18n="nav_contact"
                 >تواصل معنا</a
               >
             </li>
+            <li class="nav-item">
+              <button
+                id="lang-toggle"
+                class="btn btn-outline-light btn-sm px-3"
+                data-i18n="lang_btn"
+              >
+                English
+              </button>
+            </li>
           </ul>
-          <div class="d-flex ms-3">
-            <button id="languageToggle" class="btn btn-outline-light btn-sm">
-              EN
-            </button>
-          </div>
         </div>
       </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="row align-items-center min-vh-100">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="display-3 fw-bold mb-4 fade-in" data-key="hero.title">
-              إسناد للاستشارات القانونية والإدارية
-            </h1>
-            <p class="lead fs-3 mb-5 fade-in" data-key="hero.subtitle">
-              شركاء النجاح القانوني في رحلتك التجارية الإمارت العربية المتحدة
-            </p>
-            <div class="d-flex gap-4 justify-content-center flex-wrap">
-              <a href="#consultation-form" class="btn btn-custom btn-lg">
-                <i class="fas fa-calendar-check me-2"></i
-                ><span data-key="hero.cta2">احجز استشارتك الآن</span>
-              </a>
-              <a href="#services" class="btn btn-outline-light btn-lg border-2">
-                <i class="fas fa-eye me-2"></i
-                ><span data-key="hero.cta1">استعرض خدماتنا</span>
-              </a>
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section position-relative text-white py-5" style="background-image: linear-gradient(rgba(141, 110, 99, 0.8), rgba(141, 110, 99, 0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWdhbCUyMGNvbnN1bHRhbnR8ZW58MXx8fHwxNzY2ODQyOTQwfDA&ixlib=rb-4.1.0&q=80&w=1080'); background-size: cover; background-position: center; min-height: 100vh;">
+        <div class="container position-relative" style="z-index: 2;">
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-8" data-aos="fade-right">
+            
+              <h1 class="display-4 fw-bold mb-3 text-white" data-i18n="hero_title">
+                مجموعة إسناد للاستشارات
+              </h1>
+              <p class="h5 mb-4 text-light" data-i18n="hero_subtitle">
+                قانونية | إدارية | موارد بشرية | تحصيل ديون
+              </p>
+              <p class="lead mb-4" data-i18n="hero_desc">
+                نطمح لتطبيق القانون وخدمة المجتمع بشفافية ومصداقية لارتجاع الحقوق لأصحابها.
+              </p>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="#consultation" class="btn btn-light btn-lg px-4" data-i18n="hero_btn_book">
+                  احجز استشارتك الآن
+                </a>
+                <a href="#services" class="btn btn-outline-light btn-lg px-4" data-i18n="hero_btn_services">
+                  استعرض خدماتنا
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.3); z-index: 1;"></div>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-white">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="position-relative">
-              <img
-                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                class="img-fluid rounded-4 shadow-lg"
-                alt="فريق إسناد"
-              />
-              <div
-                class="position-absolute bottom-0 start-0 bg-white p-4 rounded-3 shadow m-4"
-              >
-                <h4 class="text-primary-dark mb-2" data-key="about.experience">
-                  +15 سنة خبرة
-                </h4>
-                <p class="text-dark mb-0" data-key="about.experienceDesc">
-                  في مجال الاستشارات القانونية
-                </p>
-              </div>
+      <!-- About Section -->
+      <section id="about" class="py-5" style="background-color: var(--secondary);">
+        <div class="container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <div class="d-inline-flex align-items-center gap-3 mb-4">
+              <i class="fas fa-scale-balanced fa-3x text-primary"></i>
+              <h1 class="display-4 fw-bold text-primary" data-i18n="about_title">
+                من نحن
+              </h1>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <h2 class="mb-4" data-key="about.title">من نحن</h2>
-            <p class="fs-5 text-dark mb-4" data-key="about.content1"></p>
-            <p class="fs-5 text-dark mb-4" data-key="about.content2"></p>
-            <div class="row mt-4">
-              <div class="col-md-6">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="rounded-circle bg-light p-3 me-3">
-                    <i class="fas fa-shield-alt fa-2x text-primary"></i>
-                  </div>
-                  <div>
-                    <h5 class="mb-1" data-key="about.confidentiality">
-                      السرية التامة
-                    </h5>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="about.confidentialityDesc"
-                    >
-                      نضمن خصوصية بياناتك
-                    </p>
-                  </div>
+
+          <div class="row align-items-center">
+            <!-- Story Content -->
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="mb-4">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="bg-primary" style="height: 4px; width: 48px;"></div>
+                  <h2 class="h3 fw-bold text-primary" data-i18n="story_title">قصتنا</h2>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="rounded-circle bg-light p-3 me-3">
-                    <i class="fas fa-award fa-2x text-primary"></i>
-                  </div>
-                  <div>
-                    <h5 class="mb-1" data-key="about.quality">
-                      الجودة العالية
-                    </h5>
-                    <p class="text-dark mb-0" data-key="about.qualityDesc">
-                      معايير احترافية عالمية
-                    </p>
-                  </div>
+              
+              <p class="lead text-muted" data-i18n="about_text_1">
+                تأسست مجموعة إسناد عام 2013، وهي شركة متخصصة في تقديم الخدمات القانونية والإدارية والمالية في دولة الإمارات العربية المتحدة.
+              </p>
+              <p class="lead text-muted" data-i18n="about_text_2">
+                نقدم حلولاً متكاملة للأفراد والمؤسسات من خلال فريق متخصص يضم محامين ومستشارين إداريين وماليين ذوي خبرة واسعة.
+              </p>
+
+              <div class="d-flex align-items-center gap-4 pt-4">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fas fa-award text-primary"></i>
+                  <span class="fw-semibold">2013</span>
+                </div>
+                <div class="vr"></div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fas fa-users text-primary"></i>
+                  <span class="fw-semibold" data-i18n="experience">10+ سنوات خبرة</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+              <div class="position-relative">
+                <div class="rounded-4 overflow-hidden shadow-lg">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-25"></div>
+                  <img
+                    src="https://images.unsplash.com/photo-1760089449852-e8cade7feb53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWdhbCUyMGNvbnN1bHRpbmd8ZW58MXx8fHwxNzY2ODQyOTQwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    alt="Legal Consulting"
+                    class="img-fluid"
+                    style="height: 400px; object-fit: cover;"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Services Section -->
+      <!-- Qualifications Section -->
+      <section class="py-5">
+        <div class="container">
+          <div class="mx-auto" style="max-width: 960px;" data-aos="fade-up">
+            <div class="bg-primary rounded-4 p-4 p-md-5 shadow-lg position-relative overflow-hidden">
+              
+              <div class="position-relative">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <i class="fas fa-graduation-cap fa-2x text-white"></i>
+                  <h3 class="h2 fw-bold text-white" data-i18n="qualifications_title">
+                    المؤهلات والخبرات
+                  </h3>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 backdrop-blur rounded-3 p-3 border border-white border-opacity-25">
+                      <i class="fas fa-check-circle text-white"></i>
+                      <span class="text-white" data-i18n="qual_1"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 backdrop-blur rounded-3 p-3 border border-white border-opacity-25">
+                      <i class="fas fa-check-circle text-white"></i>
+                      <span class="text-white" data-i18n="qual_2">خبرة واسعة في القانون التجاري</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 backdrop-blur rounded-3 p-3 border border-white border-opacity-25">
+                      <i class="fas fa-check-circle text-white"></i>
+                      <span class="text-white" data-i18n="qual_3">مستشارون إداريون معتمدون</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 backdrop-blur rounded-3 p-3 border border-white border-opacity-25">
+                      <i class="fas fa-check-circle text-white"></i>
+                      <span class="text-white" data-i18n="qual_4">خبرة في تحصيل الديون</span>
+                    </div>
+                  </div>
+                    <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 backdrop-blur rounded-3 p-3 border border-white border-opacity-25">
+                      <i class="fas fa-check-circle text-white"></i>
+                      <span class="text-white" data-i18n="qual_5"> ماجستير في إدارة الأعمال</span>
+                    </div>
+                  </div>
+                    <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 backdrop-blur rounded-3 p-3 border border-white border-opacity-25">
+                      <i class="fas fa-check-circle text-white"></i>
+                      <span class="text-white" data-i18n="qual_6"> كالريوس في اللغة الإنجليزية </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision & Mission Cards -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4 justify-content-center" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Vision Card -->
+            <div class="col-lg-6" data-aos="fade-up">
+              <div class="card h-100 border-0 shadow-lg hover-shadow transition-all">
+                <div class="card-body p-4">
+                  <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width: 64px; height: 64px; background: linear-gradient(135deg, #a1887f, #8d6e63);">
+                    <i class="fas fa-eye fa-2x text-white"></i>
+                  </div>
+                  
+                  <h3 class="card-title h4 fw-bold mb-3 text-primary" data-i18n="vision_title">
+                    الرؤية
+                  </h3>
+                  <p class="card-text text-muted" data-i18n="vision_text">
+                    أن نكون الشركة الرائدة في تقديم الخدمات القانونية والإدارية في المنطقة، مع الالتزام بالجودة والابتكار.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mission Card -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100 border-0 shadow-lg hover-shadow transition-all">
+                <div class="card-body p-4">
+                  <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-4" style="width: 64px; height: 64px; background: linear-gradient(135deg, #8d6e63, #5d4037);">
+                    <i class="fas fa-bullseye fa-2x text-white"></i>
+                  </div>
+                  
+                  <h3 class="card-title h4 fw-bold mb-3 text-primary" data-i18n="mission_title">
+                    الرسالة
+                  </h3>
+                  <p class="card-text text-muted" data-i18n="mission_text">
+                    تقديم حلول قانونية وإدارية متكاملة لعملائنا بكفاءة واحترافية عالية، مع الحفاظ على السرية والثقة.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <section id="services" class="py-5 bg-light">
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
-          <h2 class="mb-3" data-key="services.title">خدماتنا المتميزة</h2>
-          <p class="text-dark fs-5" data-key="services.subtitle">
-            نقدم مجموعة شاملة من الخدمات القانونية والإدارية لتلبية جميع
-            احتياجاتك
+          <h2 class="mb-3 fw-bold" data-i18n="services_main_title">
+            خدماتنا المتكاملة
+          </h2>
+          <p class="text-dark fs-5" data-i18n="services_sub_title">
+            حلول شاملة: قانونية، إدارية، مالية، وموارد بشرية
           </p>
         </div>
 
         <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-scale-balanced"></i>
+              </div>
+              <h4 class="mb-3" data-i18n="srv_legal_title">
+                الاستشارات القانونية
+              </h4>
+              <p class="text-dark small" data-i18n="srv_legal_desc">
+                تشمل القضايا التجارية، المدنية، الجنائية، الأحوال الشخصية،
+                المنازعات العمالية، القضايا الإيجارية، وقضايا التحكيم.
+              </p>
+            </div>
+          </div>
+
           <div
             class="col-lg-4 col-md-6"
             data-aos="fade-up"
@@ -270,50 +371,80 @@
           >
             <div class="service-card">
               <div class="service-icon">
-                <i class="fas fa-balance-scale"></i>
+                <i class="fas fa-hand-holding-usd"></i>
               </div>
-              <h4 class="mb-3" data-key="services.legal.title">
-                الاستشارات القانونية
-              </h4>
-              <p class="text-dark" data-key="services.legal.desc">
-                تغطية كاملة للمجالات القانونية: تجاري، عقاري، عمالي، أحوال
-                شخصية، وجنائي مع فريق من المحامين المتخصصين.
+              <h4 class="mb-3" data-i18n="srv_debt_title">تحصيل الديون</h4>
+              <p class="text-dark small" data-i18n="srv_debt_desc">
+                من أهم المكاتب في الدولة لتحصيل الديون. نستخدم حلولاً متنوعة
+                (ودية وقضائية) لاسترجاع الحقوق مع الحفاظ على السرية التامة.
               </p>
             </div>
           </div>
+
           <div
             class="col-lg-4 col-md-6"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             <div class="service-card">
-              <div class="service-icon">
-                <i class="fas fa-building"></i>
-              </div>
-              <h4 class="mb-3" data-key="services.company.title">
-                تأسيس الشركات
+              <div class="service-icon"><i class="fas fa-users-gear"></i></div>
+              <h4 class="mb-3" data-i18n="srv_hr_title">
+                الإدارة والموارد البشرية
               </h4>
-              <p class="text-dark" data-key="services.company.desc">
-                خدمات شاملة لتأسيس وترخيص الشركات في الإمارت العربية المتحدة وفق
-                أحدث الأنظمة واللوائح مع متابعة مستمرة.
+              <p class="text-dark small" data-i18n="srv_hr_desc">
+                عمل هياكل إدارية، الوصف الوظيفي، وتدريب الكوادر البشرية لتحسين
+                مستوى الوعي والأداء.
               </p>
             </div>
           </div>
+
           <div
             class="col-lg-4 col-md-6"
             data-aos="fade-up"
             data-aos-delay="300"
           >
             <div class="service-card">
-              <div class="service-icon">
-                <i class="fas fa-file-contract"></i>
-              </div>
-              <h4 class="mb-3" data-key="services.contract.title">
-                صياغة العقود
+              <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+              <h4 class="mb-3" data-i18n="srv_feasibility_title">
+                دراسات الجدوى والجودة
               </h4>
-              <p class="text-dark" data-key="services.contract.desc">
-                صياغة ومراجعة جميع أنواع العقود التجارية والمدنية لضمان حماية
-                حقوقك ومصالحك القانونية.
+              <p class="text-dark small" data-i18n="srv_feasibility_desc">
+                إعداد دراسات الجدوى الاقتصادية والمساعدة في الحصول على شهادة
+                الجودة (ISO).
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-file-signature"></i>
+              </div>
+              <h4 class="mb-3" data-i18n="srv_contract_title">صياغة العقود</h4>
+              <p class="text-dark small" data-i18n="srv_contract_desc">
+                صياغة ومراجعة كافة العقود المدنية والتجارية وعقود الشركات لحماية
+                حقوق الموكلين.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-registered"></i></div>
+              <h4 class="mb-3" data-i18n="srv_tm_title">
+                تسجيل العلامات التجارية
+              </h4>
+              <p class="text-dark small" data-i18n="srv_tm_desc">
+                خدمات تسجيل وحماية العلامات التجارية والملكية الفكرية للمؤسسات
+                والأفراد.
               </p>
             </div>
           </div>
@@ -321,95 +452,81 @@
       </div>
     </section>
 
-    <!-- Collapsible Services List -->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonial-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="mb-3 fw-bold" data-i18n="testimonials_title">آراء العملاء</h2>
+          <p class="text-dark fs-5" data-i18n="testimonials_subtitle">
+            ما يقوله عملاؤنا عن خدماتنا
+          </p>
+        </div>
+
+        <div id="testimonials-container" class="row g-4">
+          <!-- Reviews will be loaded here dynamically -->
+          <div class="col-12 text-center">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 text-muted">جاري تحميل التقييمات...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="collapse-section">
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
-          <h2 class="mb-3" data-key="services.details.title">تفاصيل خدماتنا</h2>
-          <p class="text-dark fs-5" data-key="services.details.subtitle">
-            اضغط على أي خدمة لمعرفة المزيد من التفاصيل
-          </p>
+          <h2 class="mb-3" data-i18n="collapse_main_title">تفاصيل الخدمات</h2>
         </div>
 
         <div class="collapse-list-container" data-aos="fade-up">
           <div class="collapse-list-item">
             <div class="collapse-list-header">
               <h5>
-                <i class="fas fa-balance-scale"></i>
-                <span data-key="services.legal.specialized"
-                  >الاستشارات القانونية المتخصصة</span
+                <i class="fas fa-briefcase"></i>
+                <span data-i18n="collapse_biz_title"
+                  >خدمات الأعمال الإدارية والهيكلة</span
                 >
               </h5>
-              <span class="collapse-list-icon">
-                <i class="fas fa-chevron-down"></i>
-              </span>
+              <span class="collapse-list-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
             </div>
             <div class="collapse-list-content">
               <div class="collapse-list-content-inner">
-                <p class="fs-5 mb-4" data-key="services.legal.intro">
-                  نقدم استشارات قانونية متكاملة تغطي جميع المجالات القانونية:
-                </p>
-                <div class="service-details">
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-briefcase me-2"></i
-                      ><span data-key="services.legal.commercial.title"
-                        >القانون التجاري</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.legal.commercial.desc"
+                <ul class="list-group list-group-flush bg-transparent">
+                  <li class="list-group-item bg-transparent">
+                    <i class="fas fa-check text-primary me-2"></i>
+                    <span data-i18n="collapse_biz_1"
+                      >عمل هياكل إدارية وتنظيمية.</span
                     >
-                      استشارات في تأسيس الشركات، الاندماج، التصفية، المنافسة،
-                      والملكية الفكرية.
-                    </p>
-                  </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-home me-2"></i
-                      ><span data-key="services.legal.realestate.title"
-                        >القانون العقاري</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.legal.realestate.desc"
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <i class="fas fa-check text-primary me-2"></i>
+                    <span data-i18n="collapse_biz_2"
+                      >إعداد دراسات الجدوى الاقتصادية للمشاريع.</span
                     >
-                      استشارات في البيع، الشراء، الإيجار، الرهن، والمنازعات
-                      العقارية.
-                    </p>
-                  </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-users me-2"></i
-                      ><span data-key="services.legal.labor.title"
-                        >القانون العمالي</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.legal.labor.desc"
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <i class="fas fa-check text-primary me-2"></i>
+                    <span data-i18n="collapse_biz_3"
+                      >تسجيل العلامات التجارية.</span
                     >
-                      استشارات في عقود العمل، المنازعات العمالية، وإنهاء خدمات
-                      العاملين.
-                    </p>
-                  </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-user-friends me-2"></i
-                      ><span data-key="services.legal.personal.title"
-                        >الأحوال الشخصية</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.legal.personal.desc"
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <i class="fas fa-check text-primary me-2"></i>
+                    <span data-i18n="collapse_biz_4"
+                      >الحصول على شهادات الجودة (ISO).</span
                     >
-                      استشارات في الزواج، الطلاق، الميراث، الوصية، والنفقة.
-                    </p>
-                  </div>
-                </div>
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <i class="fas fa-check text-primary me-2"></i>
+                    <span data-i18n="collapse_biz_5"
+                      >تحسين مستوى الحوكمة وضبط الجودة.</span
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -417,156 +534,65 @@
           <div class="collapse-list-item">
             <div class="collapse-list-header">
               <h5>
-                <i class="fas fa-building"></i>
-                <span data-key="services.company.services"
-                  >خدمات تأسيس وترخيص الشركات</span
+                <i class="fas fa-gavel"></i>
+                <span data-i18n="collapse_legal_title"
+                  >الاختصاصات القانونية والقضائية</span
                 >
               </h5>
-              <span class="collapse-list-icon">
-                <i class="fas fa-chevron-down"></i>
-              </span>
+              <span class="collapse-list-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
             </div>
             <div class="collapse-list-content">
               <div class="collapse-list-content-inner">
-                <p class="fs-5 mb-4" data-key="services.company.intro">
-                  خدمات متكاملة لتأسيس الشركات في الإمارت العربية المتحدة:
+                <p data-i18n="collapse_legal_intro">
+                  ننوب عن الوكيل أمام كافة الهيئات القضائية ولجان فض المنازعات:
                 </p>
-                <div class="service-details">
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-clipboard-check me-2"></i
-                      ><span data-key="services.company.activity.title"
-                        >اختيار النشاط</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.company.activity.desc"
-                    >
-                      مساعدتك في اختيار النشاط التجاري المناسب والترخيص اللازم
-                      له.
-                    </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i class="fas fa-circle text-primary small me-2"></i>
+                        <span data-i18n="collapse_legal_1"
+                          >القضايا التجارية والمدنية.</span
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-circle text-primary small me-2"></i>
+                        <span data-i18n="collapse_legal_2"
+                          >قضايا الأحوال الشخصية (الزواج، الطلاق،
+                          الميراث).</span
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-circle text-primary small me-2"></i>
+                        <span data-i18n="collapse_legal_3"
+                          >القضايا الجنائية والجزائية.</span
+                        >
+                      </li>
+                    </ul>
                   </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-file-signature me-2"></i
-                      ><span data-key="services.company.registration.title"
-                        >التسجيل والترخيص</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.company.registration.desc"
-                    >
-                      إتمام جميع إجراءات التسجيل في الوزارات والجهات المعنية.
-                    </p>
-                  </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-passport me-2"></i
-                      ><span data-key="services.company.residence.title"
-                        >خدمات الإقامة</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.company.residence.desc"
-                    >
-                      حصول المالكين والمدراء على الإقامات وتصاريح العمل اللازمة.
-                    </p>
-                  </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-handshake me-2"></i
-                      ><span data-key="services.company.followup.title"
-                        >المتابعة المستمرة</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.company.followup.desc"
-                    >
-                      متابعة تجديد التراخيص والالتزامات النظامية بشكل دوري.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="collapse-list-item">
-            <div class="collapse-list-header">
-              <h5>
-                <i class="fas fa-file-contract"></i>
-                <span data-key="services.contract.services"
-                  >صياغة ومراجعة العقود</span
-                >
-              </h5>
-              <span class="collapse-list-icon">
-                <i class="fas fa-chevron-down"></i>
-              </span>
-            </div>
-            <div class="collapse-list-content">
-              <div class="collapse-list-content-inner">
-                <p class="fs-5 mb-4" data-key="services.contract.intro">
-                  نضمن لك عقوداً محكمة تحمي مصالحك القانونية:
-                </p>
-                <div class="service-details">
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-handshake me-2"></i
-                      ><span data-key="services.contract.partnership.title"
-                        >عقود الشراكة</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.contract.partnership.desc"
-                    >
-                      صياغة عقود الشراكة التجارية والاستثمارية بكافة أنواعها.
-                    </p>
-                  </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-shopping-cart me-2"></i
-                      ><span data-key="services.contract.sales.title"
-                        >عقود البيع</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.contract.sales.desc"
-                    >
-                      عقود بيع وشراء السلع والخدمات والعقارات والتجهيزات.
-                    </p>
-                  </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-hard-hat me-2"></i
-                      ><span data-key="services.contract.construction.title"
-                        >عقود المقاولات</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.contract.construction.desc"
-                    >
-                      عقود أعمال المقاولات والإنشاءات بكافة أحجامها.
-                    </p>
-                  </div>
-                  <div class="detail-item">
-                    <h6 class="text-primary-dark mb-3">
-                      <i class="fas fa-user-tie me-2"></i
-                      ><span data-key="services.contract.employment.title"
-                        >عقود العمل</span
-                      >
-                    </h6>
-                    <p
-                      class="text-dark mb-0"
-                      data-key="services.contract.employment.desc"
-                    >
-                      صياغة عقود العمل والإدارة والاستشارات بكافة أنواعها.
-                    </p>
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i class="fas fa-circle text-primary small me-2"></i>
+                        <span data-i18n="collapse_legal_4"
+                          >المنازعات العمالية (أصحاب عمل وعمال).</span
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-circle text-primary small me-2"></i>
+                        <span data-i18n="collapse_legal_5"
+                          >المنازعات الإيجارية.</span
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <i class="fas fa-circle text-primary small me-2"></i>
+                        <span data-i18n="collapse_legal_6"
+                          >قضايا التحكيم التجاري.</span
+                        >
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -576,208 +602,177 @@
       </div>
     </section>
 
-    <!-- Consultation Section -->
     <section id="consultation" class="consultation-section">
       <div class="container">
-        <div class="consultation-header" data-aos="fade-up">
-          <h2 data-key="consultation.title">نظام الاستشارات القانونية</h2>
-          <p data-key="consultation.subtitle">
-            نقدم استشارات قانونية مخصصة تبدأ من أول اتصال وحتى حل القضية
-          </p>
+        <div
+          class="vision-system bg-white p-5 rounded-4 shadow-sm mb-5"
+          data-aos="fade-up"
+        >
+          <div class="text-center mb-4">
+            <h3 class="fw-bold text-primary">
+              <i class="fas fa-laptop-house me-2"></i>
+              <span data-i18n="consult_system_title"
+                >نظام "رؤية" في الاستشارات عن بعد</span
+              >
+            </h3>
+            <p class="text-muted" data-i18n="consult_system_desc">
+              نظام متكامل لتقديم الاستشارات بمرونة عالية
+            </p>
+          </div>
+          <div class="row g-4 text-center">
+            <div class="col-md-3">
+              <div class="step-circle mb-3">1</div>
+              <h5 class="fw-bold" data-i18n="step_1_title">
+                تحديد نوع الاستشارة
+              </h5>
+              <p class="small text-muted" data-i18n="step_1_desc">
+                يحدد العميل نوع الاستشارة المطلوبة (قانونية، إدارية، إلخ).
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="step-circle mb-3">2</div>
+              <h5 class="fw-bold" data-i18n="step_2_title">سداد الرسوم</h5>
+              <p class="small text-muted" data-i18n="step_2_desc">
+                يقوم العميل بسداد الرسوم عن طريق حساب الشركة البنكي.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="step-circle mb-3">3</div>
+              <h5 class="fw-bold" data-i18n="step_3_title">
+                تحديد الوقت والطريقة
+              </h5>
+              <p class="small text-muted" data-i18n="step_3_desc">
+                يختار العميل الوقت المناسب وطريقة التواصل (هاتف/مقابلة).
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="step-circle mb-3">4</div>
+              <h5 class="fw-bold" data-i18n="step_4_title">جلسات الاستشارة</h5>
+              <p class="small text-muted" data-i18n="step_4_desc">
+                مدة الاستشارة: 4 لقاءات/جلسات، مدة كل جلسة ساعة واحدة.
+              </p>
+            </div>
+          </div>
+          <div class="alert alert-primary mt-4 mb-0 text-center">
+            <i class="fas fa-shield-alt me-2"></i>
+            <span data-i18n="consult_note"
+              >نراعي ونحافظ على أسرار عملائنا ونحترم كافة الفروق الفردية.</span
+            >
+          </div>
         </div>
 
-        <div class="consultation-steps" data-aos="fade-up">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <h4 data-key="consultation.step1.title">التواصل الأولي</h4>
-            <p class="text-dark" data-key="consultation.step1.desc">
-              اتصل بنا أو املأ النموذج للحصول على استشارة أولية مجانية لتقييم
-              حالتك
-            </p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <h4 data-key="consultation.step2.title">التحليل القانوني</h4>
-            <p class="text-dark" data-key="consultation.step2.desc">
-              يقوم فريقنا المختص بتحليل حالتك ومراجعة جميع المستندات القانونية
-            </p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <h4 data-key="consultation.step3.title">تقديم الحلول</h4>
-            <p class="text-dark" data-key="consultation.step3.desc">
-              نقدم لك الخيارات القانونية المتاحة مع شرح مفصل لكل خيار
-            </p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">4</div>
-            <h4 data-key="consultation.step4.title">التنفيذ والمتابعة</h4>
-            <p class="text-dark" data-key="consultation.step4.desc">
-              نقوم بتنفيذ الخطة المتفق عليها مع متابعة مستمرة لإبلاغك بآخر
-              التطورات
-            </p>
-          </div>
-        </div>
-
-        <!-- Consultation Form -->
         <div
           id="consultation-form"
           class="consultation-form-container"
           data-aos="fade-up"
         >
           <div class="form-header">
-            <h3 data-key="consultation.form.title">طلب استشارة قانونية</h3>
-            <p class="text-dark" data-key="consultation.form.subtitle">
-              املأ النموذج وسنتصل بك خلال 24 ساعة عمل
+            <h3 data-i18n="form_header">طلب استشارة أو خدمة</h3>
+            <p class="text-dark" data-i18n="form_subheader">
+              املأ النموذج وسيقوم فريقنا بالتواصل معك في أقرب وقت
             </p>
           </div>
 
           <form id="consultationForm">
             <div class="form-row mb-4">
               <div class="form-group">
-                <label class="form-label">
-                  <i class="fas fa-user"></i>
-                  <span data-key="form.name">الاسم الكامل</span>
-                </label>
+                <label class="form-label"
+                  ><i class="fas fa-user"></i>
+                  <span data-i18n="lbl_name">الاسم الكامل</span></label
+                >
                 <input
                   type="text"
                   name="fullName"
                   class="form-control"
                   required
                   placeholder="أدخل اسمك الكامل"
+                  data-i18n="ph_name"
                 />
               </div>
               <div class="form-group">
-                <label class="form-label">
-                  <i class="fas fa-envelope"></i>
-                  <span data-key="form.email">البريد الإلكتروني</span>
-                </label>
+                <label class="form-label"
+                  ><i class="fas fa-envelope"></i>
+                  <span data-i18n="lbl_email">البريد الإلكتروني</span></label
+                >
                 <input
                   type="email"
                   name="email"
                   class="form-control"
                   required
                   placeholder="example@email.com"
+                  data-i18n="ph_email"
                 />
               </div>
             </div>
 
             <div class="form-row mb-4">
               <div class="form-group">
-                <label class="form-label">
-                  <i class="fas fa-phone"></i>
-                  <span data-key="form.phone">رقم الهاتف</span>
-                </label>
+                <label class="form-label"
+                  ><i class="fas fa-phone"></i>
+                  <span data-i18n="lbl_phone">رقم الهاتف</span></label
+                >
                 <input
                   type="tel"
                   name="phone"
                   class="form-control"
                   required
-                  placeholder="05XXXXXXXX"
+                  placeholder="050xxxxxxx"
+                  data-i18n="ph_phone"
                 />
               </div>
               <div class="form-group">
-                <label class="form-label">
-                  <i class="fas fa-briefcase"></i>
-                  <span data-key="form.consultationType">نوع الاستشارة</span>
-                </label>
+                <label class="form-label"
+                  ><i class="fas fa-list-ul"></i>
+                  <span data-i18n="lbl_service">نوع الخدمة</span></label
+                >
                 <select name="consultationType" class="form-select" required>
-                  <option value="" data-key="form.selectOption">
-                    اختر نوع الاستشارة
+                  <option value="" data-i18n="opt_default">
+                    اختر نوع الخدمة
                   </option>
-                  <option value="legal-consultation">
-                    الاستشارات القانونية
+                  <option value="legal" data-i18n="opt_legal">
+                    استشارات قانونية (مدني، تجاري، جنائي)
                   </option>
-                  <option value="legal-correspondence">
-                    المراسلات القانونية
+                  <option value="remote" data-i18n="opt_remote">
+                    استشارات عن بعد (نظام رؤية)
                   </option>
-                  <option value="labor-issues">القضايا العمالية</option>
-                  <option value="litigation-memorandums">
-                    كتابة مذكرات القضايا والدعاوى
+                  <option value="debt" data-i18n="opt_debt">
+                    تحصيل الديون
                   </option>
-                  <option value="contract-drafting">
-                    صياغة العقود - الردود القانونية
+                  <option value="company" data-i18n="opt_company">
+                    تأسيس شركات / علامات تجارية
                   </option>
-                  <option value="debt-collection">تحصيل الديون</option>
-                  <option value="commercial-registration">
-                    تسجيل البلاغات التجارية
+                  <option value="feasibility" data-i18n="opt_feasibility">
+                    دراسات جدوى / ISO
                   </option>
-                  <option value="hr-consulting">
-                    الاستشارات الإدارية - الموارد البشرية
+                  <option value="hr" data-i18n="opt_hr">
+                    موارد بشرية وهياكل إدارية
                   </option>
-                  <option value="training-development">التدريب والتطوير</option>
-                  <option value="feasibility-studies">
-                    دراسات الجدوى الاقتصادية
+                  <option value="contracts" data-i18n="opt_contracts">
+                    صياغة عقود
                   </option>
-                  <option value="company-establishment">
-                    تأسيس شركات - عمل هياكل تنظيمية
-                  </option>
-                  <option value="other">أخرى</option>
                 </select>
               </div>
             </div>
 
             <div class="form-group mb-4">
-              <label class="form-label">
-                <i class="fas fa-comment"></i>
-                <span data-key="form.details">تفاصيل الاستشارة</span>
-              </label>
+              <label class="form-label"
+                ><i class="fas fa-comment"></i>
+                <span data-i18n="lbl_details">التفاصيل</span></label
+              >
               <textarea
                 name="details"
                 class="form-control"
                 rows="5"
                 required
-                placeholder="صف حالتك القانونية بالتفصيل..."
+                placeholder="اكتب تفاصيل طلبك هنا..."
+                data-i18n="ph_details"
               ></textarea>
-            </div>
-
-            <div class="form-row mb-4">
-              <div class="form-group">
-                <label class="form-label">
-                  <i class="fas fa-calendar"></i>
-                  <span data-key="form.preferredTime"
-                    >الوقت المناسب للاتصال</span
-                  >
-                </label>
-                <select name="preferredTime" class="form-select">
-                  <option value="" data-key="form.selectTime">
-                    اختر الوقت المناسب
-                  </option>
-                  <option value="morning" data-key="form.time.morning">
-                    الصباح (8ص - 12م)
-                  </option>
-                  <option value="afternoon" data-key="form.time.afternoon">
-                    الظهر (12م - 4م)
-                  </option>
-                  <option value="evening" data-key="form.time.evening">
-                    المساء (4م - 8م)
-                  </option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group mb-4">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="agreeTerms"
-                  required
-                />
-                <label
-                  class="form-check-label text-dark"
-                  for="agreeTerms"
-                  data-key="form.agreeTerms"
-                >
-                  أوافق على الشروط والأحكام وأوافق على معالجة بياناتي الشخصية
-                </label>
-              </div>
             </div>
 
             <div class="text-center">
               <button type="submit" class="btn btn-custom btn-lg px-5">
                 <i class="fas fa-paper-plane me-2"></i
-                ><span data-key="form.submit">إرسال طلب الاستشارة</span>
+                ><span data-i18n="btn_submit">إرسال الطلب</span>
               </button>
             </div>
           </form>
@@ -785,38 +780,17 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonial-section">
-      <div class="container">
-        <div class="text-center mb-5" data-aos="fade-up">
-          <h2 class="mb-3" data-key="testimonials.title">آراء عملائنا</h2>
-          <p class="text-dark fs-5" data-key="testimonials.subtitle">
-            تجارب حقيقية لعملاء استفادوا من خدماتنا
-          </p>
-        </div>
-
-        <!-- Dynamic testimonials container - populated by google-reviews.js -->
-        <div class="row g-4" id="testimonials-container">
-          <!-- Reviews will be loaded here dynamically -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
-          <h2 class="mb-3" data-key="contact.title">تواصل معنا</h2>
-          <p class="text-dark fs-5" data-key="contact.subtitle">
-            نحن هنا لمساعدتك في أي استفسار قانوني
-          </p>
+          <h2 class="mb-3" data-i18n="contact_title">تواصل معنا</h2>
         </div>
 
         <div class="row g-5">
           <div class="col-lg-6" data-aos="fade-right">
-            <div class="contact-info-card">
-              <h4 class="mb-4 text-primary-dark" data-key="contact.info.title">
-                معلومات الاتصال
+            <div class="contact-info-card h-100">
+              <h4 class="mb-4 text-primary-dark" data-i18n="contact_info_title">
+                بيانات الاتصال
               </h4>
 
               <div class="contact-item">
@@ -824,37 +798,37 @@
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div>
-                  <h5 class="mb-2" data-key="contact.address.title">العنوان</h5>
-                  <p class="text-dark mb-0" data-key="contact.address.text">
-                    United Arab Emirates – Abu Dhabi, Hamdan Street, Al building
-                    na 6<br />P.O Box: 5115 – Abu Dhabi
+                  <h5 class="mb-2" data-i18n="contact_addr_title">العنوان</h5>
+                  <p class="text-dark mb-0" data-i18n="contact_addr_text">
+                    الإمارات العربية المتحدة - أبوظبي<br />
+                    شارع حمدان، بناية رقم 6 (بناية صيدلية نور الأهلية)<br />
+                    صندوق بريد: 5115 - أبوظبي
                   </p>
                 </div>
               </div>
 
               <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
                 <div>
-                  <h5 class="mb-2" data-key="contact.phone.title">الهاتف</h5>
-                  <p class="text-dark mb-0" data-key="contact.phone.text">
-                    Tel: +971 2 6222210<br />Fax: +971 2 6222855
+                  <h5 class="mb-2" data-i18n="contact_phone_title">
+                    الهاتف والفاكس
+                  </h5>
+                  <p class="text-dark mb-0" dir="ltr">
+                    Tel: 02 6222210<br />
+                    Fax: 02 6222855<br />
+                    Mobile: +971507751534<br />
+                    Mobile: +971506496002
                   </p>
                 </div>
               </div>
 
               <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                 <div>
-                  <h5 class="mb-2" data-key="contact.email.title">
+                  <h5 class="mb-2" data-i18n="contact_email_title">
                     البريد الإلكتروني
                   </h5>
-                  <p class="text-dark mb-0" data-key="contact.email.text">
-                    esnaaduae@gmail.com
-                  </p>
+                  <p class="text-dark mb-0">esnaaduae@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -862,73 +836,30 @@
 
           <div class="col-lg-6" data-aos="fade-left">
             <div class="contact-info-card">
-              <h4 class="mb-4 text-primary-dark" data-key="contact.form.title">
-                أرسل رسالة
-              </h4>
-              <form id="contactForm">
-                <div class="form-group mb-4">
-                  <label class="form-label" data-key="contact.form.name"
-                    >الاسم الكامل</label
-                  >
-                  <input
-                    type="text"
-                    name="contactName"
-                    class="form-control"
-                    required
-                  />
-                </div>
-                <div class="form-group mb-4">
-                  <label class="form-label" data-key="contact.form.email"
-                    >البريد الإلكتروني</label
-                  >
-                  <input
-                    type="email"
-                    name="contactEmail"
-                    class="form-control"
-                    required
-                  />
-                </div>
-                <div class="form-group mb-4">
-                  <label class="form-label" data-key="contact.form.subject"
-                    >الموضوع</label
-                  >
-                  <input
-                    type="text"
-                    name="contactSubject"
-                    class="form-control"
-                    required
-                  />
-                </div>
-                <div class="form-group mb-4">
-                  <label class="form-label" data-key="contact.form.message"
-                    >الرسالة</label
-                  >
-                  <textarea
-                    name="contactMessage"
-                    class="form-control"
-                    rows="5"
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-custom btn-lg w-100">
-                  <i class="fas fa-paper-plane me-2"></i
-                  ><span data-key="contact.form.submit">إرسال الرسالة</span>
-                </button>
-              </form>
+              <iframe
+                src="https://maps.google.com/maps?q=Abu%20Dhabi%20Hamdan%20Street&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="400"
+                style="border: 0; border-radius: 15px"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 text-lg-start text-center mb-4 mb-lg-0">
-            <h3 class="text-white mb-3" data-key="footer.company">إسناد</h3>
-            <p class="text-white-50 mb-0" data-key="footer.tagline">
-              شركاؤك في النجاح القانوني والإداري
+            <h3 class="text-white mb-3">
+            <img src="Esnaad-logo.png" alt="Esnaad Logo" height="40">
+          </h3>
+            <p class="text-white-50 mb-0" data-i18n="footer_desc">
+              تأسست عام 2013 - ريادة في القانون والإدارة
             </p>
           </div>
 
@@ -948,439 +879,18 @@
           </div>
 
           <div class="col-lg-4 text-lg-end text-center">
-            <p class="text-white mb-0" data-key="footer.copyright">
-              © 2025 إسناد للاستشارات القانونية. جميع الحقوق محفوظة.
+            <p class="text-white mb-0" data-i18n="footer_copy">
+              © 2025 مجموعة إسناد. جميع الحقوق محفوظة.
             </p>
-          </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <div class="footer-links">
-            <a href="#home" class="footer-link">الرئيسية</a>
-            <a href="#about" class="footer-link">من نحن</a>
-            <a href="#services" class="footer-link">خدماتنا</a>
-            <a href="#consultation" class="footer-link">الاستشارات</a>
-            <a href="#contact" class="footer-link">اتصل بنا</a>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="translations.js"></script>
-    <script>
-      // Initialize AOS
-      AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100,
-      });
-
-      // Current language
-      let currentLang = "ar";
-
-      // Language toggle function
-      function toggleLanguage() {
-        currentLang = currentLang === "ar" ? "en" : "ar";
-        document.documentElement.lang = currentLang;
-        document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
-
-        // Update button text
-        const toggleBtn = document.getElementById("languageToggle");
-        toggleBtn.textContent = currentLang === "ar" ? "EN" : "عربي";
-
-        // Apply translations
-        applyTranslations();
-      }
-
-      // Function to apply translations
-      function applyTranslations() {
-        document.querySelectorAll("[data-key]").forEach((element) => {
-          const key = element.getAttribute("data-key");
-          if (translations[currentLang][key]) {
-            element.textContent = translations[currentLang][key];
-          }
-        });
-      }
-
-      // Initialize language toggle
-      document.addEventListener("DOMContentLoaded", function () {
-        // Apply Arabic translations on page load
-        applyTranslations();
-
-        const toggleBtn = document.getElementById("languageToggle");
-        if (toggleBtn) {
-          toggleBtn.addEventListener("click", toggleLanguage);
-        }
-      });
-
-      // Navbar scroll effect
-      window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-        if (window.scrollY > 100) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
-
-      // Collapsible list functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const collapseItems = document.querySelectorAll(".collapse-list-item");
-
-        collapseItems.forEach((item) => {
-          const header = item.querySelector(".collapse-list-header");
-          const content = item.querySelector(".collapse-list-content");
-
-          header.addEventListener("click", function () {
-            // Close all other items
-            collapseItems.forEach((otherItem) => {
-              if (
-                otherItem !== item &&
-                otherItem.classList.contains("active")
-              ) {
-                otherItem.classList.remove("active");
-                otherItem.querySelector(
-                  ".collapse-list-content"
-                ).style.maxHeight = "0";
-              }
-            });
-
-            // Toggle current item
-            const isActive = item.classList.contains("active");
-            item.classList.toggle("active");
-
-            if (!isActive) {
-              content.style.maxHeight = content.scrollHeight + "px";
-            } else {
-              content.style.maxHeight = "0";
-            }
-          });
-        });
-
-        // Initialize EmailJS
-        // Replace with your actual EmailJS credentials from https://dashboard.emailjs.com/
-        const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY_HERE"; // Get from Account > General
-        const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID_HERE"; // Get from Email Services
-        const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID_HERE"; // Get from Email Templates
-
-        // Initialize EmailJS with your public key
-        if (typeof emailjs !== "undefined") {
-          emailjs.init(EMAILJS_PUBLIC_KEY);
-        }
-
-        // Consultation form submission with EmailJS
-        const consultationForm = document.getElementById("consultationForm");
-        if (consultationForm) {
-          consultationForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const submitBtn = consultationForm.querySelector(
-              'button[type="submit"]'
-            );
-            const originalText = submitBtn.innerHTML;
-
-            // Show loading state
-            submitBtn.innerHTML =
-              '<i class="fas fa-spinner fa-spin me-2"></i>جاري الإرسال...';
-            submitBtn.disabled = true;
-
-            // Prepare form data matching EmailJS template variables
-            const formData = {
-              to_email: "your-email@.com", // Your receiving email
-              from_name:
-                consultationForm.querySelector('[name="fullName"]').value,
-              from_email:
-                consultationForm.querySelector('[name="email"]').value,
-              phone: consultationForm.querySelector('[name="phone"]').value,
-              service: consultationForm.querySelector(
-                '[name="consultationType"]'
-              ).value,
-              message: consultationForm.querySelector('[name="details"]').value,
-              preferred_time:
-                consultationForm.querySelector('[name="preferredTime"]')
-                  .value || "غير محدد",
-              submission_date: new Date().toLocaleString("ar-AE", {
-                timeZone: "Asia/Dubai",
-              }),
-            };
-
-            // Send email using EmailJS
-            if (
-              typeof emailjs !== "undefined" &&
-              EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY_HERE"
-            ) {
-              emailjs
-                .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formData)
-                .then(
-                  function (response) {
-                    console.log(
-                      "Email sent successfully!",
-                      response.status,
-                      response.text
-                    );
-
-                    // Show success state
-                    submitBtn.innerHTML =
-                      '<i class="fas fa-check me-2"></i>تم الإرسال بنجاح!';
-                    submitBtn.style.background =
-                      "linear-gradient(135deg, #28a745, #20c997)";
-
-                    // Reset form after 3 seconds
-                    setTimeout(() => {
-                      consultationForm.reset();
-                      submitBtn.innerHTML = originalText;
-                      submitBtn.disabled = false;
-                      submitBtn.style.background = "";
-
-                      // Show success message
-                      alert(
-                        "تم استلام طلب استشارتك بنجاح! سنتواصل معك خلال 24 ساعة عمل."
-                      );
-                    }, 3000);
-                  },
-                  function (error) {
-                    console.error("Failed to send email:", error);
-
-                    // Show error state
-                    submitBtn.innerHTML =
-                      '<i class="fas fa-times me-2"></i>حدث خطأ، حاول مرة أخرى';
-                    submitBtn.style.background =
-                      "linear-gradient(135deg, #dc3545, #c82333)";
-
-                    // Reset button after 3 seconds
-                    setTimeout(() => {
-                      submitBtn.innerHTML = originalText;
-                      submitBtn.disabled = false;
-                      submitBtn.style.background = "";
-                    }, 3000);
-
-                    alert(
-                      "عذراً، حدث خطأ أثناء إرسال النموذج. يرجى المحاولة مرة أخرى أو الاتصال بنا مباشرة."
-                    );
-                  }
-                );
-            } else {
-              // Fallback if EmailJS is not configured
-              console.warn(
-                "EmailJS not configured. Please set up your EmailJS credentials."
-              );
-
-              // Simulate success for demo purposes
-              setTimeout(() => {
-                submitBtn.innerHTML =
-                  '<i class="fas fa-check me-2"></i>تم الإرسال بنجاح!';
-                submitBtn.style.background =
-                  "linear-gradient(135deg, #28a745, #20c997)";
-
-                setTimeout(() => {
-                  consultationForm.reset();
-                  submitBtn.innerHTML = originalText;
-                  submitBtn.disabled = false;
-                  submitBtn.style.background = "";
-
-                  alert(
-                    "تنبيه: EmailJS غير مهيأ. يرجى إعداد بيانات الاعتماد في الكود.\n\nللتشغيل الفعلي، اتبع التعليمات في ملف EMAILJS_SETUP.md"
-                  );
-                }, 2000);
-              }, 1000);
-            }
-          });
-        }
-
-        // Contact form submission with EmailJS
-        const contactForm = document.getElementById("contactForm");
-        if (contactForm) {
-          contactForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const submitBtn = contactForm.querySelector(
-              'button[type="submit"]'
-            );
-            const originalText = submitBtn.innerHTML;
-
-            // Show loading state
-            submitBtn.innerHTML =
-              '<i class="fas fa-spinner fa-spin me-2"></i>جاري الإرسال...';
-            submitBtn.disabled = true;
-
-            // Prepare form data for contact form
-            const formData = {
-              to_email: "2lhashmiii@gmail.com", // Your receiving email
-              from_name: contactForm.querySelector('[name="contactName"]')
-                .value,
-              from_email: contactForm.querySelector('[name="contactEmail"]')
-                .value,
-              subject: contactForm.querySelector('[name="contactSubject"]')
-                .value,
-              message: contactForm.querySelector('[name="contactMessage"]')
-                .value,
-              submission_date: new Date().toLocaleString("ar-AE", {
-                timeZone: "Asia/Dubai",
-              }),
-            };
-
-            // Send email using EmailJS
-            if (
-              typeof emailjs !== "undefined" &&
-              EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY_HERE"
-            ) {
-              emailjs
-                .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formData)
-                .then(
-                  function (response) {
-                    console.log(
-                      "Contact email sent successfully!",
-                      response.status,
-                      response.text
-                    );
-
-                    // Show success state
-                    submitBtn.innerHTML =
-                      '<i class="fas fa-check me-2"></i>تم الإرسال بنجاح!';
-                    submitBtn.style.background =
-                      "linear-gradient(135deg, #28a745, #20c997)";
-
-                    // Reset form after 3 seconds
-                    setTimeout(() => {
-                      contactForm.reset();
-                      submitBtn.innerHTML = originalText;
-                      submitBtn.disabled = false;
-                      submitBtn.style.background = "";
-
-                      alert("تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.");
-                    }, 3000);
-                  },
-                  function (error) {
-                    console.error("Failed to send contact email:", error);
-
-                    // Show error state
-                    submitBtn.innerHTML =
-                      '<i class="fas fa-times me-2"></i>حدث خطأ، حاول مرة أخرى';
-                    submitBtn.style.background =
-                      "linear-gradient(135deg, #dc3545, #c82333)";
-
-                    // Reset button after 3 seconds
-                    setTimeout(() => {
-                      submitBtn.innerHTML = originalText;
-                      submitBtn.disabled = false;
-                      submitBtn.style.background = "";
-                    }, 3000);
-
-                    alert(
-                      "عذراً، حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى أو الاتصال بنا مباشرة."
-                    );
-                  }
-                );
-            } else {
-              // Fallback if EmailJS is not configured
-              console.warn("EmailJS not configured for contact form.");
-
-              setTimeout(() => {
-                submitBtn.innerHTML =
-                  '<i class="fas fa-check me-2"></i>تم الإرسال بنجاح!';
-                submitBtn.style.background =
-                  "linear-gradient(135deg, #28a745, #20c997)";
-
-                setTimeout(() => {
-                  contactForm.reset();
-                  submitBtn.innerHTML = originalText;
-                  submitBtn.disabled = false;
-                  submitBtn.style.background = "";
-
-                  alert(
-                    "تنبيه: EmailJS غير مهيأ. يرجى إعداد بيانات الاعتماد في الكود.\n\nللتشغيل الفعلي، اتبع التعليمات في ملف EMAILJS_SETUP.md"
-                  );
-                }, 2000);
-              }, 1000);
-            }
-          });
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            const targetId = this.getAttribute("href");
-            if (targetId === "#") return;
-
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-              e.preventDefault();
-
-              // Close mobile navbar if open
-              const navbarCollapse = document.querySelector(
-                ".navbar-collapse.show"
-              );
-              if (navbarCollapse) {
-                navbarCollapse.classList.remove("show");
-              }
-
-              window.scrollTo({
-                top: targetElement.offsetTop - 80,
-                behavior: "smooth",
-              });
-            }
-          });
-        });
-
-        // Initialize dropdown animations
-        const dropdowns = document.querySelectorAll(".dropdown");
-        dropdowns.forEach((dropdown) => {
-          dropdown.addEventListener("show.bs.dropdown", function () {
-            const menu = this.querySelector(".dropdown-menu");
-            if (menu) {
-              menu.style.opacity = "0";
-              menu.style.transform = "translateY(-10px) scale(0.95)";
-            }
-          });
-
-          dropdown.addEventListener("shown.bs.dropdown", function () {
-            const menu = this.querySelector(".dropdown-menu");
-            if (menu) {
-              menu.style.opacity = "1";
-              menu.style.transform = "translateY(0) scale(1)";
-            }
-          });
-        });
-      });
-
-      // Dropdown hover effect for desktop
-      if (window.innerWidth > 992) {
-        const dropdowns = document.querySelectorAll(".dropdown");
-        dropdowns.forEach((dropdown) => {
-          dropdown.addEventListener("mouseenter", function () {
-            const toggle = this.querySelector(".dropdown-toggle");
-            if (toggle) {
-              toggle.click();
-            }
-          });
-
-          dropdown.addEventListener("mouseleave", function () {
-            const toggle = this.querySelector(".dropdown-toggle");
-            if (toggle && toggle.getAttribute("aria-expanded") === "true") {
-              toggle.click();
-            }
-          });
-        });
-      }
-    </script>
-
-    <!-- Google Maps JavaScript API -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR-GOOGLE-API-KEY&libraries=places"
-      async
-      defer
-    ></script>
-
-    <!-- EmailJS SDK -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-
-    <!-- Google Reviews Script -->
+    <script src="script.js"></script>
     <script src="google-reviews.js"></script>
   </body>
 </html>
