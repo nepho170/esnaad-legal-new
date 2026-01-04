@@ -1,23 +1,42 @@
 /* Esnaad Legal Website Styles */
 :root {
-  --primary-light: #d7ccc8; /* بني فاتح جداً */
-  --primary: #a1887f; /* بني متوسط فاتح */
-  --primary-dark: #8d6e63; /* بني فاتح قليلاً */
-  --secondary: #ffffff; /* أبيض */
-  --accent: #bcaaa4; /* بني رمادي فاتح */
-  --light: #fafafa; /* أبيض فاتح جداً */
-  --dark: #5d4037; /* بني غامق للكتابة */
+  --text-primary: #3f8e44;
+  --primary-light: #effaf1;
+  /* بني فاتح جداً */
+  --primary: #2d8237;
+  /* بني متوسط فاتح */
+  --primary-dark: #528a55;
+  /* بني فاتح قليلاً */
+  --secondary: #ffffff;
+  /* أبيض */
+  --accent: #afd6b6;
+  /* بني رمادي فاتح */
+  --light: #fafafa;
+  /* أبيض فاتح جداً */
+  --dark: #2e7935;
+  /* بني غامق للكتابة */
   --white: #ffffff;
-  --beige: #efebe9; /* بيج فاتح */
+  --beige: #efebe9;
+  /* بيج فاتح */
+  --green: #97d79a;
+  /* أخضر */
+  --green-light: #81c784;
+  /* أخضر فاتح */
+  --green-dark: #53ac57;
+  /* أخضر غامق */
+  --red: #ae352e;
+  /* أحمر */
+  --red-light: #ef5350;
+  /* أحمر فاتح */
   --transition-slow: 0.8s;
   --transition-medium: 0.5s;
   --transition-fast: 0.3s;
-  --shadow-light: 0 4px 12px rgba(141, 110, 99, 0.08);
-  --shadow-medium: 0 8px 24px rgba(141, 110, 99, 0.12);
-  --shadow-heavy: 0 12px 36px rgba(141, 110, 99, 0.15);
+  --shadow-light: 0 4px 12px rgba(141, 99, 99, 0.08);
+  --shadow-medium: 0 8px 24px rgba(141, 99, 99, 0.12);
+  --shadow-heavy: 0 12px 36px rgba(141, 99, 99, 0.15);
 
   /* Override Bootstrap variables for brown theme */
-  --bs-primary: #a1887f;
+  --bs-primary: #a5cb9a;
   --bs-primary-rgb: 161, 136, 127;
 }
 
@@ -63,7 +82,7 @@ h5 {
 
 .navbar.scrolled {
   padding: 0.8rem 0;
-  background: rgba(141, 110, 99, 0.95) !important;
+  background: var(--primary-dark) !important;
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow-medium);
 }
@@ -106,7 +125,7 @@ h5 {
   right: 0;
   width: 0;
   height: 2px;
-  background: var(--secondary);
+  background: var(--red-light);
   transition: width var(--transition-medium) ease;
 }
 
@@ -114,7 +133,9 @@ h5 {
   width: 100%;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
   color: var(--secondary) !important;
   transform: translateY(-2px);
 }
@@ -135,6 +156,7 @@ h5 {
     opacity: 0;
     transform: translateY(-15px) scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -159,12 +181,9 @@ h5 {
 
 /* Hero section بألوان بني فاتح */
 .hero {
-  background: linear-gradient(
-      rgba(161, 136, 127, 0.9),
-      rgba(141, 110, 99, 0.95)
-    ),
-    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80")
-      center/cover no-repeat;
+  background: linear-gradient(rgba(202, 120, 114, 0.95),
+      rgba(202, 120, 114, 0.95)),
+    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80") center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -193,7 +212,7 @@ h5 {
 .btn-custom:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(141, 110, 99, 0.25);
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  background: linear-gradient(135deg, var(--red), var(--red-light));
   color: var(--secondary);
 }
 
@@ -223,7 +242,7 @@ h5 {
 }
 
 .collapse-list-item:hover {
-  background-color: rgba(215, 204, 200, 0.05);
+  background-color: rgba(201, 215, 200, 0.05);
 }
 
 .collapse-list-header {
@@ -239,7 +258,7 @@ h5 {
 
 .collapse-list-item:hover .collapse-list-header {
   background-color: var(--light);
-  border-right-color: var(--primary);
+  border-right-color: var(--red-light);
 }
 
 .collapse-list-header h5 {
@@ -355,7 +374,7 @@ h5 {
 .step-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-medium);
-  border-color: var(--primary);
+  border-color: var(--red-light);
 }
 
 .step-number {
@@ -458,7 +477,7 @@ h5 {
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-medium);
-  border-color: var(--primary);
+  border-color: var(--red-light);
 }
 
 .service-icon {
@@ -478,13 +497,13 @@ h5 {
 
 .service-card:hover .service-icon {
   transform: rotate(15deg) scale(1.1);
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, var(--red), var(--red-light));
   color: var(--white);
 }
 
 /* Testimonials */
 .testimonial-section {
-  background: var(--beige);
+  background: var(--primary-light);
   padding: 80px 0;
 }
 
@@ -502,7 +521,7 @@ h5 {
 .testimonial-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-medium);
-  border-color: var(--primary);
+  border-color: var(--red-light);
 }
 
 .testimonial-card::before {
@@ -529,11 +548,11 @@ h5 {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white);
+  color: var(--primary);
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -630,7 +649,7 @@ footer {
 
 .social-icon:hover {
   background: var(--white);
-  color: var(--primary-dark);
+  color: var(--red);
   transform: translateY(-5px);
 }
 
@@ -659,9 +678,11 @@ footer {
   0% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
   }
+
   70% {
     box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
@@ -701,17 +722,21 @@ footer {
   .hero h1 {
     font-size: 3rem;
   }
+
   .consultation-form-container {
     padding: 30px 20px;
   }
+
   .collapse-list-header {
     padding: 20px;
   }
+
   .footer-links {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
+
   .whatsapp-float {
     width: 60px;
     height: 60px;
@@ -719,6 +744,173 @@ footer {
     bottom: 20px;
     left: 20px;
   }
+
+  /* Contact Section Mobile */
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .contact-info-card {
+    padding: 25px 20px;
+  }
+
+  /* Horizontal Carousel for Clients */
+  .clients-section .row {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding-bottom: 15px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .clients-section .row>[class*="col-"] {
+    flex: 0 0 80%;
+    max-width: 80%;
+    scroll-snap-align: start;
+  }
+
+  /* Horizontal Carousel for Services */
+  #services .row {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding-bottom: 15px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #services .row>[class*="col-"] {
+    flex: 0 0 85%;
+    max-width: 85%;
+    scroll-snap-align: start;
+  }
+
+  .clients-section .container,
+  #services .container {
+    overflow-x: visible !important;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .clients-section .row::-webkit-scrollbar,
+  #services .row::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .clients-section .row::-webkit-scrollbar-track,
+  #services .row::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .clients-section .row::-webkit-scrollbar-thumb,
+  #services .row::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+  }
+}
+
+/* Legal Highlight Effect */
+.legal-highlight {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.legal-highlight:first-child {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.legal-highlight:hover {
+  color: #dd3d3d;
+  transform: scale(1.05);
+  text-shadow: 0 0 8px rgba(255, 246, 246, 0.4);
+}
+
+/* About Section Text Color */
+#about .lead {
+  color: var(--text-primary) !important;
+}
+
+#about h1,
+#about h2 {
+  color: var(--text-primary) !important;
+}
+
+/* Custom green text */
+.custom-green-text {
+  color: var(--text-primary) !important;
+}
+
+/* Red text */
+.red-text {
+  color: red !important;
+}
+
+/* Clients Section */
+.clients-section {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  padding: 60px 0;
+}
+
+.client-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.client-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border-color: var(--red-light);
+}
+
+.client-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--green), var(--green-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+.client-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 0;
+}
+
+.clients-section h2 {
+  color: white;
+}
+
+.clients-section p {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Animations */
@@ -726,6 +918,7 @@ footer {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
