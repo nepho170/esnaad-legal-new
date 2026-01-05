@@ -19,7 +19,7 @@ const translations = {
         // Hero Section
         hero_badge: "تأسست عام 2013",
         hero_title: "مجموعة إسناد للاستشارات",
-        hero_subtitle: "<span class='legal-highlight'>قانونية</span> | <span class='legal-highlight'>إدارية</span> | <span class='legal-highlight'>موارد بشرية</span> | <span class='legal-highlight'>تحصيل ديون</span> | <span class='legal-highlight'>إدارة العقارات</span> | <span class='legal-highlight'>خدمات الطباعة وتخليص المعاملات</span> | <span class='legal-highlight'>النقل العلمي</span>",
+        hero_subtitle: "<span class='legal-highlight'>قانونية</span> | <span class='legal-highlight'>إدارية</span> | <span class='legal-highlight'>موارد بشرية</span> | <span class='legal-highlight'>تحصيل ديون</span> | <span class='legal-highlight'>إدارة العقارات</span> | <span class='legal-highlight'>خدمات الطباعة وتخليص المعاملات</span> | <span class='legal-highlight'>النقل العام</span>",
         hero_desc:
             "نطمح لتطبيق القانون وخدمة المجتمع بشفافية ومصداقية لارتجاع الحقوق لأصحابها.",
         hero_btn_book: "احجز استشارتك الآن",
@@ -192,7 +192,7 @@ const translations = {
         // Hero Section
         hero_badge: "Established in 2013",
         hero_title: "Esnaad Consultancy Group",
-        hero_subtitle: "<span class='legal-highlight'>Legal</span> | <span class='legal-highlight'>Administrative</span> | <span class='legal-highlight'>HR</span> | <span class='legal-highlight'>Debt Collection</span> | <span class='legal-highlight'>Real Estate Management</span> | <span class='legal-highlight'>Printing & Transaction Services</span> | <span class='legal-highlight'>Knowledge Transfer</span>",
+        hero_subtitle: "<span class='legal-highlight'>Legal</span> | <span class='legal-highlight'>Administrative</span> | <span class='legal-highlight'>HR</span> | <span class='legal-highlight'>Debt Collection</span> | <span class='legal-highlight'>Real Estate Management</span> | <span class='legal-highlight'>Printing & Transaction Services</span> | <span class='legal-highlight'> Public Transport</span>",
         hero_desc:
             "We aspire to apply the law and serve the community with transparency and credibility to restore rights to their owners.",
         hero_btn_book: "Book Consultation",
