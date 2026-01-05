@@ -808,7 +808,7 @@ footer {
   /* Hide scrollbar but keep functionality */
   .clients-section .row::-webkit-scrollbar,
   #services .row::-webkit-scrollbar {
-    height: 6px;
+    height: 10px !important;
   }
 
   .clients-section .row::-webkit-scrollbar-track,
@@ -819,7 +819,7 @@ footer {
 
   .clients-section .row::-webkit-scrollbar-thumb,
   #services .row::-webkit-scrollbar-thumb {
-    background: var(--red-light);
+    background: var(--red-light) !important;
     border-radius: 10px;
   }
 }
