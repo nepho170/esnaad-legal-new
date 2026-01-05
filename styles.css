@@ -819,7 +819,7 @@ footer {
 
   .clients-section .row::-webkit-scrollbar-thumb,
   #services .row::-webkit-scrollbar-thumb {
-    background: var(--primary);
+    background: var(--red-light);
     border-radius: 10px;
   }
 }
