@@ -19,7 +19,7 @@ const translations = {
         // Hero Section
         hero_badge: "تأسست عام 2013",
         hero_title: "مجموعة إسناد للاستشارات",
-        hero_subtitle: "قانونية | إدارية | موارد بشرية | تحصيل ديون",
+        hero_subtitle: "<span class='legal-highlight'>قانونية</span> | <span class='legal-highlight'>إدارية</span> | <span class='legal-highlight'>موارد بشرية</span> | <span class='legal-highlight'>تحصيل ديون</span> | <span class='legal-highlight'>إدارة العقارات</span> | <span class='legal-highlight'>خدمات الطباعة وتخليص المعاملات</span> | <span class='legal-highlight'>النقل العلمي</span>",
         hero_desc:
             "نطمح لتطبيق القانون وخدمة المجتمع بشفافية ومصداقية لارتجاع الحقوق لأصحابها.",
         hero_btn_book: "احجز استشارتك الآن",
@@ -32,12 +32,13 @@ const translations = {
         about_text_2:
             "منذ تأسيسها، نمت الشركة لتصبح واحدة من المكاتب القانونية المتميزة في دولة الإمارات العربية المتحدة، موسعة خبرتها ونجاحها في تقديم كافة الخدمات المطلوبة وفقاً لقانون دولة الإمارات.",
         qualifications_title: "المؤهلات العلمية للمؤسسين",
-        qual_1: "دكتوراه في إدارة الأعمال",
-        qual_2: "دكتوراه في القانون العام",
-        qual_3: "دكتوراه في الموارد البشرية",
-        qual_4: "دكتوراه في الجودة",
-        qual_5: "ماجستير في إدارة الأعمال (MBA)",
-        qual_6: "بكالريوس في اللغة الإنجليزية",
+        founder_eyad: "د. إياد إبراهيم الغول - المؤسس",
+        qual_eyad_1: "دكتوراه في القانون العام",
+        qual_eyad_2: "دكتوراه في إدارة الأعمال",
+        qual_eyad_3: "دكتوراه في الموارد البشرية",
+        qual_eyad_4: "ماجستير في إدارة الأعمال (MBA)",
+        founder_abdulrahman: "د. عبدالرحمن الحارثي - شريك ومؤسس",
+        qual_abdulrahman_1: "دكتوراه في القانون العام",
 
 
         // Vision/Mission Cards
@@ -87,6 +88,14 @@ const translations = {
         testimonials_title: "آراء العملاء",
         testimonials_subtitle: "ما يقوله عملاؤنا عن خدماتنا",
 
+        // Clients Section
+        clients_title: "عملاؤنا",
+        clients_subtitle: "نفخر بثقة عملائنا من المؤسسات الحكومية والخاصة",
+        client_1: "بلدية الظفرة",
+        client_2: "مؤسسة زايد الخيرية",
+        client_3: "شركة x line Alain",
+        client_4: "بلدية أبوظبي",
+
         // Collapse Details
         collapse_main_title: "تفاصيل الخدمات",
         collapse_biz_title: "خدمات الأعمال الإدارية والهيكلة",
@@ -104,6 +113,12 @@ const translations = {
         collapse_legal_4: "المنازعات العمالية (أصحاب عمل وعمال).",
         collapse_legal_5: "المنازعات الإيجارية.",
         collapse_legal_6: "قضايا التحكيم التجاري.",
+        collapse_commercial_title: "الأنشطة التجارية",
+        collapse_commercial_1: "استشارات الموارد البشرية",
+        collapse_commercial_2: "خدمات تأجير المقارات وإدارتها",
+        collapse_commercial_3: "خدمات الطباعة وتطوير المستندات",
+        collapse_commercial_4: "تحصيل الديون",
+        collapse_commercial_5: "نقل الركاب بالحافلات المؤجرة",
 
         // Consultation System
         consult_system_title: 'نظام "رؤية" في الاستشارات عن بعد',
@@ -177,7 +192,7 @@ const translations = {
         // Hero Section
         hero_badge: "Established in 2013",
         hero_title: "Esnaad Consultancy Group",
-        hero_subtitle: "Legal | Administrative | HR | Debt Collection",
+        hero_subtitle: "<span class='legal-highlight'>Legal</span> | <span class='legal-highlight'>Administrative</span> | <span class='legal-highlight'>HR</span> | <span class='legal-highlight'>Debt Collection</span> | <span class='legal-highlight'>Real Estate Management</span> | <span class='legal-highlight'>Printing & Transaction Services</span> | <span class='legal-highlight'>Knowledge Transfer</span>",
         hero_desc:
             "We aspire to apply the law and serve the community with transparency and credibility to restore rights to their owners.",
         hero_btn_book: "Book Consultation",
@@ -192,12 +207,13 @@ const translations = {
             "Since its establishment, the company has grown to become one of the distinguished law firms in the United Arab Emirates, expanding its experience and success in providing all required services in accordance with UAE law",
         experience: "10+ Years Experience",
         qualifications_title: "Founders' Qualifications",
-        qual_1: "PhD in Business Administration",
-        qual_2: "PhD in Public Law",
-        qual_3: "PhD in Human Resources",
-        qual_4: "PhD in Quality Management",
-        qual_5: "Master of Business Administration (MBA)",
-        qual_6: "Bachelor's in English Language",
+        founder_eyad: "Dr. Iyad Ibrahim Al-Ghoul - Founder",
+        qual_eyad_1: "PhD in Public Law",
+        qual_eyad_2: "PhD in Business Administration",
+        qual_eyad_3: "PhD in Human Resources",
+        qual_eyad_4: "Master of Business Administration (MBA)",
+        founder_abdulrahman: "Dr. Abdulrahman Al-Harthi - Co-Founder & Partner",
+        qual_abdulrahman_1: "PhD in Public Law",
 
         // Vision/Mission Cards
         vision_title: "Our Vision",
@@ -248,6 +264,14 @@ const translations = {
         testimonials_title: "Client Reviews",
         testimonials_subtitle: "What Our Clients Say About Our Services",
 
+        // Clients Section
+        clients_title: "Our Clients",
+        clients_subtitle: "Proud to serve government and private institutions",
+        client_1: "Al Dhafra Municipality",
+        client_2: "Zayed Charitable Foundation",
+        client_3: "x line Alain Company",
+        client_4: "Abu Dhabi Municipality",
+
         // Collapse Details
         collapse_main_title: "Service Details",
         collapse_biz_title: "Administrative & Structuring Services",
@@ -266,6 +290,12 @@ const translations = {
         collapse_legal_4: "Labor Disputes (Employers and Workers).",
         collapse_legal_5: "Rental Disputes.",
         collapse_legal_6: "Commercial Arbitration cases.",
+        collapse_commercial_title: "Commercial Activities",
+        collapse_commercial_1: "Human Resources Consultations",
+        collapse_commercial_2: "Real Estate Leasing and Management Services",
+        collapse_commercial_3: "Printing and Document Development Services",
+        collapse_commercial_4: "Debt Collection",
+        collapse_commercial_5: "Passenger Transport with Chartered Buses",
 
         // Consultation System
         consult_system_title: '"Ruya" Remote Consultation System',
