@@ -1,32 +1,30 @@
 /* Esnaad Legal Website Styles */
+
 :root {
-  --text-primary: #3f8e44;
-  --primary-light: #effaf1;
+  --primary-light: #D7CCC8;
   /* بني فاتح جداً */
-  --primary: #2d8237;
+  --primary: #A1887F;
   /* بني متوسط فاتح */
-  --primary-dark: #528a55;
+  --primary-dark: #8D6E63;
   /* بني فاتح قليلاً */
-  --secondary: #ffffff;
+  --secondary: #FFFFFF;
   /* أبيض */
-  --accent: #afd6b6;
+  --accent: #BCAAA4;
   /* بني رمادي فاتح */
-  --light: #fafafa;
+  --light: #FAFAFA;
   /* أبيض فاتح جداً */
-  --dark: #2e7935;
+  --dark: #5D4037;
   /* بني غامق للكتابة */
-  --white: #ffffff;
-  --beige: #efebe9;
+  --white: #FFFFFF;
+  --beige: #EFEBE9;
   /* بيج فاتح */
-  --green: #97d79a;
-  /* أخضر */
-  --green-light: #81c784;
-  /* أخضر فاتح */
-  --green-dark: #53ac57;
-  /* أخضر غامق */
-  --red: #ae352e;
-  /* أحمر */
-  --red-light: #ef5350;
+  --transition-slow: 0.8s;
+  --transition-medium: 0.5s;
+  --transition-fast: 0.3s;
+  --shadow-light: 0 4px 12px rgba(141, 110, 99, 0.08);
+  --shadow-medium: 0 8px 24px rgba(141, 110, 99, 0.12);
+  --shadow-heavy: 0 12px 36px rgba(141, 110, 99, 0.15);
+
   /* أحمر فاتح */
   --transition-slow: 0.8s;
   --transition-medium: 0.5s;
@@ -36,8 +34,8 @@
   --shadow-heavy: 0 12px 36px rgba(141, 99, 99, 0.15);
 
   /* Override Bootstrap variables for brown theme */
-  --bs-primary: #a5cb9a;
-  --bs-primary-rgb: 161, 136, 127;
+  --bs-primary: #BCAAA4;
+  --bs-primary-rgb: 188, 170, 164;
 }
 
 body {
@@ -181,9 +179,8 @@ h5 {
 
 /* Hero section بألوان بني فاتح */
 .hero {
-  background: linear-gradient(rgba(202, 120, 114, 0.95),
-      rgba(202, 120, 114, 0.95)),
-    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80") center/cover no-repeat;
+  background: linear-gradient(rgba(161, 136, 127, 0.9), rgba(141, 110, 99, 0.95)),
+    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -194,6 +191,7 @@ h5 {
   color: var(--secondary);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 /* أزرار مخصصة - بني فاتح على أبيض */
 .btn-custom {
@@ -212,7 +210,7 @@ h5 {
 .btn-custom:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(141, 110, 99, 0.25);
-  background: linear-gradient(135deg, var(--red), var(--red-light));
+  background: linear-gradient(135deg, var(--primary-dark), var(--dark));
   color: var(--secondary);
 }
 
@@ -498,12 +496,12 @@ h5 {
 .service-card:hover .service-icon {
   transform: rotate(15deg) scale(1.1);
   background: linear-gradient(135deg, var(--red), var(--red-light));
-  color: var(--white);
+  color: var(--primary-dark);
 }
 
 /* Testimonials */
 .testimonial-section {
-  background: var(--primary-light);
+  background: var(--beige);
   padding: 80px 0;
 }
 
@@ -602,7 +600,7 @@ h5 {
 
 /* Footer */
 footer {
-  background: linear-gradient(135deg, var(--red-light), var(--primary));
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: var(--white);
   padding: 60px 0 30px;
 }
@@ -649,7 +647,7 @@ footer {
 
 .social-icon:hover {
   background: var(--white);
-  color: var(--red);
+  color: var(--primary-dark);
   transform: translateY(-5px);
 }
 
@@ -819,7 +817,7 @@ footer {
 
   .clients-section .row::-webkit-scrollbar-thumb,
   #services .row::-webkit-scrollbar-thumb {
-    background: var(--red-light) !important;
+    background: var(--primary-dark) !important;
     border-radius: 10px;
   }
 }
@@ -837,7 +835,7 @@ footer {
 }
 
 .legal-highlight:hover {
-  color: #dd3d3d;
+  color: #ffbf00;
   transform: scale(1.05);
   text-shadow: 0 0 8px rgba(255, 246, 246, 0.4);
 }
@@ -852,15 +850,8 @@ footer {
   color: var(--text-primary) !important;
 }
 
-/* Custom green text */
-.custom-green-text {
-  color: var(--text-primary) !important;
-}
 
-/* Red text */
-.red-text {
-  color: red !important;
-}
+
 
 /* Clients Section */
 .clients-section {
@@ -882,7 +873,7 @@ footer {
 .client-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  border-color: var(--red-light);
+  border-color: var(--primary-dark);
 }
 
 .client-icon {
@@ -895,7 +886,7 @@ footer {
   justify-content: center;
   margin: 0 auto 20px;
   font-size: 2rem;
-  color: white;
+  color: var(--primary-dark);
 }
 
 .client-name {
